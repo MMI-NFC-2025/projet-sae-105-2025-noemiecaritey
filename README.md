@@ -3,8 +3,9 @@
 
 À compléter :
 
-- NOM :
-- PRÉNOM :
-- GROUPE :
+- NOM : CARITEY
+- PRÉNOM : Noémie
+- GROUPE : A2
 - URL du site :
-- URL FIGMA :
+- URL FIGMA : https://www.figma.com/design/jW2t3uUwk36txnzeA4LwdT/Maquettes-projet-individuel-%E2%80%94-No%C3%A9mie-CARITEY?node-id=3704-2046&t=lJ4v4JfBaeSRafQw-1
+
