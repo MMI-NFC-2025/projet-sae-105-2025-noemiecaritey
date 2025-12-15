@@ -1,35 +1,41 @@
 /* Header */
-header {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
-    background-color: white;
+    padding: var(--header-padding);
+    background-color: var(--color-white);
     position: sticky;
     top: 0;
     z-index: 100;
 }
 
-.header-left {
+.header__logo {
+    margin-right: auto;
     display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
+    align-items: center;
 }
 
-.logo img {
-    height: 80px;
+.header__logo img {
+    height: var(--header-height);
     width: auto;
+    display: block;
 }
 
-.lang-switcher {
-    text-decoration: none;
-    color: #333;
-    font-size: 0.875rem;
-    font-weight: bold;
-}
-
-.menu-icon {
-    width: 35px;
+.header__menu {
+    width: var(--menu-size);
     height: auto;
     cursor: pointer;
+    display: block;
+}
+
+/* Lang switcher - en dehors du header */
+.lang-switcher {
+    display: block;
+    text-decoration: underline;
+    color: var(--color-text);
+    font-size: var(--font-xxs);
+    font-weight: bold;
+    padding: var(--spacing-small) var(--spacing-medium);
+    background-color: var(--color-white);
 }

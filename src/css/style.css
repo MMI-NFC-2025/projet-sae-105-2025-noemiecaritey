@@ -1,10 +1,26 @@
-/* Import des autres fichiers CSS */
-@import url('vendors/normalize.css');
-@import url('utils/variables.css');
-@import url('base/main.css');
-@import url('layout/header.css');
-@import url('layout/footer.css');
-@import url('components/section.css');
-@import url('components/btn.css');
-@import url('components/menu.css');
-@import url('base/media.css');
+/* Vendors */
+@import "vendors/normalize.css";
+
+/* Utils */
+@import "utils/variables.css";
+
+/* Base */
+@import "base/main.css";
+@import "base/media.css";
+
+/* Layout */
+@import "layout/header.css";
+@import "layout/footer.css";
+
+/* Components */
+@import "components/hero.css";
+@import "components/menu.css";
+@import "components/btn.css";
+@import "components/section.css";
+
+
+.actor-regular {
+  font-family: "Actor", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}

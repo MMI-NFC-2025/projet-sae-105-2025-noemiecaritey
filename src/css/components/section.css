@@ -1,0 +1,17 @@
+/* Section Introduction */
+.intro {
+    padding: 45px 23px var(--spacing-large) 23px;
+    background-color: var(--color-white);
+}
+
+.intro__text {
+    font-size: var(--font-s);
+    line-height: var(--line-height-base);
+    color: var(--color-text);
+    margin-bottom: 1.5rem;
+}
+
+.intro__text strong {
+    color: var(--rose);
+    font-weight: bold;
+}
