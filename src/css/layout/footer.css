@@ -1,0 +1,111 @@
+.footer {
+  padding: 0;
+  margin-top: 0;
+}
+
+/* Navigation items du footer (À propos, Contact, Glossaire, Mailto) */
+.footer__nav-item {
+  display: flex;
+  margin-left: -8px;
+  width: 410px;
+  height: 43px;
+  border: none;
+  position: relative;
+}
+
+.footer__nav-item--about {
+  background-color: var(--bleu2, #9ed6df);
+  color: var(--color-white, #ffffff);
+}
+
+.footer__nav-item--contact {
+  background-color: var(--jaune, #eac119);
+  color: var(--color-white, #ffffff);
+}
+
+.footer__nav-item--glossaire {
+  background-color: var(--orange, #ed783d);
+  color: var(--color-white, #ffffff);
+}
+
+.footer__nav-item--mailto {
+  background-color: var(--vert, #245455);
+  color: var(--color-white, #ffffff);
+}
+
+.footer__nav-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer__nav-title {
+  font-size: var(--font-l);
+  font-weight: 400;
+  margin: 15px;
+  flex: 1;
+}
+
+.footer__nav-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  width: 28px;
+  flex-shrink: 0;
+}
+
+.footer__nav-link img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Contenu texte du footer */
+.footer__content {
+  background-color: var(--bleu, #808bc5);
+  color: var(--color-white, #ffffff);
+  text-align: left;
+  padding: 3px 15px;
+  margin-left: -8px;
+  width: 393px;
+  height: 135px;
+}
+
+.footer__project {
+  font-size: var(--font-l);
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.footer__link {
+  font-size: var(--font-xs);
+  color: var(--color-text, #000000);
+  word-break: break-word;
+  display: block;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.footer__link:hover {
+  color: var(--rouge, #c63f3e);
+}
+
+
+
+.footer__credits {
+  background-color: var(--rose, #eaa7c7);
+  color: var(--color-text, #000000);
+  padding: 15px;
+  font-size: var(--font-s, 14px);
+  display: flex;
+  align-items: center;
+  width: 393px;
+  height: 30px;
+  margin-left: -8px;
+  margin-bottom: 0px;
+}
+
+.footer__credits p {
+  margin: 0;
+}

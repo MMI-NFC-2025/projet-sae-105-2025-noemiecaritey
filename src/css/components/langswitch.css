@@ -1,0 +1,12 @@
+.lang-switcher {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-text);
+  font-weight: 700;
+  font-size: var(--font-s);
+  border: none;
+  z-index: 999;
+  margin-left: 15px;
+  top: 113px; 
+}
