@@ -1,8 +1,7 @@
-/* Header */
+
 .header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
     padding: var(--header-padding);
     background-color: var(--color-white);
     position: sticky;
@@ -10,9 +9,16 @@
     z-index: 100;
 }
 
-.header__logo {
-    margin-right: auto;
+.header__top {
     display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 4px; 
+}
+
+.header__logo {
+    display: flex;
+    max-width: 80%;
     align-items: center;
 }
 
@@ -20,6 +26,8 @@
     height: var(--header-height);
     width: auto;
     display: block;
+    width: 393px;
+    height: 73px;
 }
 
 .header__menu {
@@ -27,15 +35,8 @@
     height: auto;
     cursor: pointer;
     display: block;
-}
-
-/* Lang switcher - en dehors du header */
-.lang-switcher {
-    display: block;
-    text-decoration: underline;
-    color: var(--color-text);
-    font-size: var(--font-xxs);
-    font-weight: bold;
-    padding: var(--spacing-small) var(--spacing-medium);
-    background-color: var(--color-white);
+    width: 34px;
+    height: 27px;
+    flex-shrink: 0;
+    margin-left: 10px;
 }
