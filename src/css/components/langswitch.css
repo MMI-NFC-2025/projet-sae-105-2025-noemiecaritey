@@ -1,12 +1,20 @@
 .lang-switcher {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--color-text);
-  font-weight: 700;
-  font-size: var(--font-s);
-  border: none;
-  z-index: 999;
-  margin-left: 15px;
-  top: 113px; 
+  position: fixed;              
+  top: 88px;                         
+  left: 15px;                  
+  font-family: 'Actor', sans-serif; 
+  font-size: 18px;              
+  font-weight: 700;            
+  color: var(--color-dark, #000000);  
+  text-decoration: underline;  
+  text-decoration-thickness: 2px;  
+  text-underline-offset: 3px;   
+  z-index: 999;                 
+  background-color: var(--color-white, #ffffff);  
+  padding: 5px 0;               
 }
+
+.lang-switcher:hover {
+  opacity: 0.7;                 
+}
+
