@@ -196,9 +196,9 @@
 
 .biographie__internal-links {
     display: flex;
-    flex-direction: column;  /* Un en dessous de l'autre */
-    align-items: center;  /* Centre horizontalement */
-    gap: 50px;  /* Espace vertical entre les liens */
+    flex-direction: column;  
+    align-items: center;  
+    gap: 50px;  
 }
 
 .biographie__internal-link {
@@ -206,4 +206,193 @@
     align-items: center;
 }
 
+/* ===========================
+   PAGE FIGURES DE L'OMBRE
+   =========================== */
 
+/* Hero */
+.figures-ombre__hero {
+  margin-left: -8px;
+  width: 24.625rem;
+  height: 12.25rem;
+}
+
+.figures-ombre__hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Titre principal */
+.figures-ombre__title {
+  font-family: 'Actor', sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #ED783D;
+  line-height: 1.2;
+  margin: 20px 15px 15px 15px;
+}
+
+/* Blocs */
+.figures-ombre__block {
+  margin-bottom: 40px;
+  padding: 0 15px;
+}
+
+/* Texte */
+.figures-ombre__text {
+  font-family: 'Cairo', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #000000;
+  line-height: 1.6;
+}
+
+.figures-ombre__text p {
+  margin-bottom: 15px;
+}
+
+/* Sous-titres */
+.figures-ombre__subtitle {
+  font-family: 'Actor', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #808bc5;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+/* Highlight */
+.figures-ombre__highlight {
+  color: #dca7c7;
+  font-weight: 700;
+}
+
+/* Images */
+.figures-ombre__img-wrap {
+  margin: 0px 0;
+}
+
+.figures-ombre__img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Listes */
+.figures-ombre__text ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 15px 0;
+}
+
+.figures-ombre__text li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.figures-ombre__text li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--rose, #eaa7c7);
+}
+
+.figures-ombre__internal-links {
+    display: flex;
+    flex-direction: column;  
+    align-items: center;  
+    gap: 50px;  
+}
+
+/* ===========================
+   PAGE VULGARISATION
+   =========================== */
+
+/* Hero */
+.vulgarisation__hero {
+  margin-left: -8px;
+  width: 24.625rem;
+  height: 12.25rem;
+}
+
+.vulgarisation__hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Titre principal */
+.vulgarisation__title {
+  font-family: 'Actor', sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #ED783D;
+  line-height: 1.2;
+  margin: 15px 15px;
+}
+
+/* Blocs */
+.vulgarisation__block {
+  margin-bottom: 40px;
+  padding: 0 15px;
+}
+
+/* Sous-titres */
+.vulgarisation__subtitle {
+  font-family: 'Actor', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--bleu, #808bc5);
+  margin: 30px 0 15px 0;
+}
+
+/* Images centrées */
+.vulgarisation__img-wrap {
+  text-align: center;
+}
+
+.vulgarisation__img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  display: inline-block;
+}
+
+/* Texte aligné à gauche */
+.vulgarisation__text {
+  font-family: 'Cairo', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #000000;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.vulgarisation__text p {
+  margin-bottom: 15px;
+}
+
+/* Highlight */
+.vulgarisation__highlight {
+  color: #dca7c7;
+  font-weight: 700;
+}
+
+/* Liens */
+.vulgarisation__link {
+  color: #808bc5;
+  text-decoration: none;
+}
+
+.vulgarisation__link:hover {
+  opacity: 0.7;
+}
+
+.vulgarisation__link img {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
