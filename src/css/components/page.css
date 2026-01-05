@@ -396,3 +396,123 @@
   margin-right: 5px;
   vertical-align: middle;
 }
+
+
+/* ===========================
+   PAGE CONTACT
+   =========================== */
+
+.contact {
+  padding: 0 15px;
+  margin-bottom: 50px;
+}
+
+/* Titre */
+.contact__title {
+  font-family: 'Actor', sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #E8C547;
+  line-height: 1.2;
+  margin: 20px 0 30px 0;
+}
+
+/* Formulaire */
+.contact__form {
+  max-width: 400px;
+}
+
+.contact__form-group {
+  margin-bottom: 25px;
+}
+
+/* Labels */
+.contact__label {
+  font-family: 'Cairo', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Inputs */
+.contact__input {
+  width: 100%;
+  padding: 12px;
+  font-family: 'Cairo', sans-serif;
+  font-size: 16px;
+  background-color: #E8E5D8;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.contact__input:focus {
+  outline: 2px solid #E8C547;
+}
+
+/* Bouton */
+.contact__submit {
+  display: block;
+  margin: 30px auto 0 auto;
+  padding: 12px 40px;
+  font-family: 'Actor', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #FFFFFF;
+  background-color: #D85C5C;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.contact__submit:hover {
+  opacity: 0.9;
+}
+
+/* ===========================
+   PAGE GLOSSAIRE
+   =========================== */
+
+.glossaire {
+  padding: 0 15px;
+  margin-bottom: 50px;
+}
+
+/* Titre */
+.glossaire__title {
+  font-family: 'Actor', sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #D89BAE;
+  line-height: 1.2;
+  margin: 20px 0 30px 0;
+}
+
+/* Liste de définitions */
+.glossaire__list {
+  margin: 0;
+  padding: 0;
+}
+
+/* Termes */
+.glossaire__term {
+  font-family: 'Cairo', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #000000;
+  margin-top: 25px;
+  margin-bottom: 8px;
+}
+
+/* Définitions */
+.glossaire__definition {
+  font-family: 'Cairo', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #000000;
+  line-height: 1.6;
+  margin-left: 0;
+  margin-bottom: 20px;
+}
