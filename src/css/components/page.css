@@ -163,7 +163,8 @@
 
 .biographie__block:last-child {
     position: relative;
-    top: -200px;  /* Ajustez cette valeur pour remonter toute la section */
+    top: -200px;  
+    margin-bottom: -120px;
 }
 
 
@@ -183,19 +184,26 @@
 }
 
 /* Lien */
-.biographie__link {
-  display: inline-block;
-  font-family: 'Cairo', sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  color: #000000;
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 3px;
-  margin-top: 10px;
+.biographie__block:last-child .biographie__text .biographie__link {
+    position: relative !important;
+    top: -520px !important;
 }
+
 
 .biographie__link:hover {
   opacity: 0.7;
 }
+
+.biographie__internal-links {
+    display: flex;
+    flex-direction: column;  /* Un en dessous de l'autre */
+    align-items: center;  /* Centre horizontalement */
+    gap: 50px;  /* Espace vertical entre les liens */
+}
+
+.biographie__internal-link {
+    display: inline-flex;
+    align-items: center;
+}
+
 
