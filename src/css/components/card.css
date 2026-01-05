@@ -1,147 +1,342 @@
 
 .card {
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 40px;
-  position: relative;
+  margin: 0 auto 20px auto;
+  max-width: 342px;
+  width: 100%;
 }
 
 .card__content {
-  display: flex;
-  flex-direction: column;
   width: 342px;
   height: 207px;
+  display: flex;
+  align-items: stretch;
+  padding: 0;                  
   position: relative;
-  border-radius: 47px;
+  border-radius: 48px;
+  overflow: visible;           
 }
 
 .card__text {
   flex: 1;
   display: flex;
-  margin-left: 25px;
-  margin-right: 0px;
+  flex-direction: column;
+  position: relative;
   z-index: 2;
+  padding: 15px;
+  color: var(--color-white, #ffffff);
 }
 
 .card__title {
-  font-size: var(--font-s);
+  font-size: 16px;
   font-weight: 400;
-  line-height: 1.5;
-  margin-bottom: 0;
+  line-height: 1.4;
+  margin: 0 0 8px 0;
   flex: 1;
+  color: var(--color-white, #ffffff);
 }
 
-/* Highlights dans les cards */
+.card__description {
+  font-size: 16px;
+  color: var(--color-white, #ffffff);
+}
+
 .card__highlight {
   font-weight: 700;
+  color: var(--color-white, #ffffff);
 }
 
-.card__highlight--title {
-  color: var(--rouge, #c63f3e);
-}
-
-/* Lien avec flèche */
 .card__link {
+  position: absolute;
+  bottom: 12px;               
+  right: 12px;                 
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 28px;
-  margin-bottom: -150px;
-  margin-right: 30px;
+  width: 40px;               
+  height: 40px;                
   z-index: 3;
 }
 
 .card__link img {
-  width: 100%;
-  height: 100%;
+  width: 28px;                
+  height: 28px;              
+  
 }
 
-/* Image dans la card */
 .card__image {
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-  width: 45%;
-  max-width: 180px;
+  position: relative;
+  flex-shrink: 0;
+  display: flex;
   z-index: 1;
 }
 
 .card__image img {
   width: 100%;
-  height: auto;
-  display: block;
+  height: 100%;
+  object-fit: contain;
 }
 
 /* ===========================
-   VARIANTS DE COULEURS
+   CARD 1 - KATHERINE JOHNSON
    =========================== */
 
-/* Katherine Johnson - Bleu clair */
 .card--katherine .card__content {
   background-color: var(--bleu2, #9ed6df);
-  color: var(--color-white, #ffffff);
+  flex-direction: row;
+  overflow: visible;        
 }
 
-.card--katherine .card__highlight {
-  color: var(--color-white, #ffffff);
+.card--katherine .card__image {
+  width: 171px;
+  height: 309px;
+  margin-top: -100px;           
+  margin-left: 0px;       
+}
+
+.card--katherine .card__text {
+  width: calc(342px - 130px);   
+  margin-left: -41px;           
+  height: auto;
+  order: 2;
+  padding: 18px 15px;
+  position: relative;
+  z-index: 2;               
+}
+
+.card--katherine .card__title {
+  font-size: 16px;
+  margin-bottom: 6px;
+  line-height: 1.3;
+}
+
+.card--katherine .card__description {
+  font-size: 16px;
 }
 
 .card--katherine .card__highlight--title {
   color: var(--rouge, #c63f3e);
 }
 
-/* Femmes de science - Jaune */
-.card--femmes .card__content {
-  background-color: var(--jaune, #eac119);
-  color: var(--color-white, #ffffff);
+
+.card--katherine .card__link {
+  bottom: 12px;
+  right: 12px;
 }
 
-.card--femmes .card__highlight {
-  color: var(--color-white, #ffffff);
+.card--katherine .card__link img {
+  width: 28px;
+  height: 28px;
+}
+
+
+/* ===========================
+   CARD 2 - LES FIGURES DE L'OMBRES
+   =========================== */
+
+.card--figures .card__content {
+  background-color: var(--bleu, #808bc5);
+  flex-direction: row;
+  overflow: visible;      
+}
+
+.card--figures .card__image {
+  width: 114px;
+  height: 263px;
+  margin-top: -13px;           
+  margin-left: 0px;           
+  margin-right: 0;
+  order: 1;
+  flex-shrink: 0;              
+}
+
+.card--figures .card__text {
+  width: 129px;
+  height: 196px;
+  margin-left: -14px;           
+  order: 2;
+  padding: 18px 15px;           
+  position: relative;           
+  z-index: 2;                   
+}
+
+.card--figures .card__title {
+  font-size: 15px;             
+  line-height: 1.4;           
+}
+
+.card--figures .card__highlight--title {
+  color: var(--rouge, #c63f3e);
+  font-size: 16px;             
+}
+
+.card--figures .card__link {
+  bottom: 12px;
+  right: 12px;
+}
+
+.card--figures .card__link img {
+  width: 28px;
+  height: 28px;
+  margin-left: -10px;
+  margin-top: -40px;
+}
+
+
+/* ===========================
+   CARD 3 - FEMMES DE SCIENCE
+   =========================== */
+
+.card--femmes .card__content {
+  background-color: var(--jaune, #eac119);
+  flex-direction: row;
+  overflow: visible;          
+}
+
+.card--femmes .card__image {
+  width: 180px;                
+  height: 280px;                
+  margin-top: -70px;            
+  margin-right: 0px;         
+  order: 2;                     
+  flex-shrink: 0;
+}
+
+.card--femmes .card__text {
+  width: calc(342px - 140px);   
+  margin-right: -40px;         
+  order: 1;                    
+  padding: 18px 15px;
+  position: relative;
+  z-index: 2;       
+}
+
+.card--femmes .card__title {
+  font-size: 17px;
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+
+.card--femmes .card__description {
+  font-size: 15px;
+  line-height: 1.4;
 }
 
 .card--femmes .card__highlight--title {
   color: var(--rouge, #c63f3e);
 }
 
-/* Vulgarisation - Rose */
-.card--vulgarisation .card__content {
-  background-color: var(--rose, #eaa7c7);
-  color: var(--color-white, #ffffff);
+.card--femmes .card__link {
+  bottom: 12px;
+  right: 12px;
 }
 
-.card--vulgarisation .card__highlight {
-  color: var(--color-white);
+.card--femmes .card__link img {
+  width: 28px;
+  height: 28px;
+  margin-left: 270px;
+}
+
+
+/* ===========================
+   CARD 4 - ANNA CABANEL
+   =========================== */
+
+.card--anna .card__content {
+  background-color: var(--vert, #245455);
+  flex-direction: column;
+  padding: 0;
+  overflow: hidden;              
+}
+
+.card--anna .card__text {
+  width: 100%;
+  padding: 20px 18px;
+  max-width: 100%;              
+  padding: 18px 15px 50px 15px; 
+  box-sizing: border-box;       
+  overflow-wrap: break-word;    
+}
+
+.card--anna .card__title {
+  font-size: 17px;             
+  margin-bottom: 12px;         
+  line-height: 1.4;
+}
+
+.card--anna .card__description {
+  font-size: 15px;             
+  line-height: 1.5;          
+}
+
+.card--anna .card__highlight--title {
+  color: var(--rouge, #c63f3e);
+}
+
+.card--anna .card__link {
+  bottom: 15px;                 
+  right: 15px;
+}
+
+.card--anna .card__link img {
+  width: 28px;
+  height: 28px;
+  margin-left: -0px;
+  margin-top: -60px;
+}
+
+
+/* ===========================
+   CARD 5 - VULGARISATION
+   =========================== */
+
+.card--vulgarisation .card__content {
+  background-color: var(--rose, #eaa7c7);
+  flex-direction: row;
+  overflow: visible;    
+}
+
+.card--vulgarisation .card__image {
+    width: 149.105px;
+    height: 155.927px;
+  margin-top: 0px;           
+  margin-right: -30px;          
+  margin-left: 0px;
+  order: 2;
+  flex-shrink: 0;               
+}
+
+.card--vulgarisation .card__text {
+  width: calc(342px - 130px);   
+  margin-right: -40px;
+  margin-left: 5px;          
+  order: 1;
+  padding: 18px 15px;           
+  position: relative;           
+  z-index: 2;                   
+}
+
+.card--vulgarisation .card__title {
+  font-size: 16px;              
+  margin-bottom: 10px;         
+  line-height: 1.35;            
+}
+
+.card--vulgarisation .card__description {
+  font-size: 15px;              
+  line-height: 1.4;             
 }
 
 .card--vulgarisation .card__highlight--title {
   color: var(--rouge, #c63f3e);
 }
 
-/* Figures de l'ombre - Bleu violet */
-.card--figures .card__content {
-  background-color: var(--bleu, #808bc5);
-  color: var(--color-white, #ffffff);
+.card--vulgarisation .card__link {
+  bottom: 12px;
+  right: 12px;
 }
 
-.card--figures .card__highlight {
-  color: var(--color-white, #ffffff);
-}
-
-.card--figures .card__highlight--title {
-  color: var(--rouge, #c63f3e);
-}
-
-/* Anna Cabanel / Femmes sciences - Vert */
-.card--femmes-sciences .card__content {
-  background-color: var(--vert, #245455);
-  color: var(--color-white, #ffffff);
-}
-
-.card--femmes-sciences .card__highlight {
-  color: var(--color-white, #ffffff);
-}
-
-.card--femmes-sciences .card__highlight--title {
-  color: var(--rouge, #c63f3e);
+.card--vulgarisation .card__link img {
+  width: 28px;
+  height: 28px;
+  margin-left: 150px;
 }
