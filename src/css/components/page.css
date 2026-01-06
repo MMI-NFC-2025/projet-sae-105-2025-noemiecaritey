@@ -2,7 +2,8 @@
 /* Titres principaux partagés */
 .biographie__title,
 .figures-ombre__title,
-.vulgarisation__title {
+.vulgarisation__title,
+.frise-chronologique__title {
     font-family: 'Actor', sans-serif;
     font-size: var(--font-xl);
     font-weight: 500;
@@ -791,4 +792,32 @@
     width: 100%;
     height: auto;
     display: block;
+}
+/* ===================================
+   FRISE CHRONOLOGIQUE PAGE
+   =================================== */
+.frise-chronologique {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+
+.frise-chronologique__title {
+    padding: 2rem 1rem;
+    margin: 0;
+}
+
+
+.decor-etoiles {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: none; 
+    margin: 0;
+    padding: 0;
+}
+
+.frise-chronologique {
+    padding-top: 1rem; 
 }
