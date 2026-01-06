@@ -1087,17 +1087,135 @@
     font-size: 1.25rem;
     font-weight: 600;
     color: #D64545; /* Rouge */
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.a-propos__nav-btn span {
-    margin-left: 0.5rem;
-    font-size: 1.5rem;
+
+/* ===================================
+   GALERIE PAGE
+   =================================== */
+
+.galerie {
+    max-width: 100%;
+    margin: 0;
+    padding: 2rem 1.5rem;
+    font-family: 'Cairo', sans-serif;
+    background-color: #FFF;
 }
 
-.a-propos__nav-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+/* Titre en rouge */
+.galerie__title {
+    font-family: 'Cairo', sans-serif;
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 700;
+    color: #D64545; /* Rouge */
+    line-height: 1.2;
+    margin-bottom: 2.5rem;
+    text-align: left;
+}
+
+/* Grid - 2 colonnes sur mobile */
+.galerie__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Item de film */
+.galerie__item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+/* Image wrapper */
+.galerie__img-wrap {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.galerie__img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    aspect-ratio: 2/3;
+}
+
+/* Titre du film */
+.galerie__film-title {
+    font-family: 'Cairo', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+    line-height: 1.3;
+    margin: 0;
+}
+
+
+/* ===================================
+   BANDE ANNONCE PAGE
+   =================================== */
+
+.bande-annonce {
+    max-width: 100%;
+    margin: 0;
+    padding: 2rem 1.5rem;
+    font-family: 'Cairo', sans-serif;
+    background-color: #FFF;
+}
+
+/* Titre en rose */
+.bande-annonce__title {
+    font-family: 'Cairo', sans-serif;
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 400;
+    color: #E89FB7; /* Rose */
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+/* Video wrapper avec navigation */
+.bande-annonce__video-wrap {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Video */
+.bande-annonce__video {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 2rem;
+}
+
+/* Navigation avec le lien SVG */
+.bande-annonce__video-wrap nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.biographie__internal-link {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    transition: transform 0.2s ease;
+}
+
+.biographie__internal-link img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.biographie__internal-link:hover {
+    transform: scale(1.02);
 }
 
