@@ -3,45 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Excerpt from Women of Science Book</title>
+    <meta name="description" content="Excerpt from the book Women of Science by Anna Cabanel on women's contribution to scientific research">
+    <title>Excerpt from the book Women of Science</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Actor&family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/src/css/style.css">
+    <script src="/src/js/script.js" defer></script>
 </head>
 <body>
     <header class="header">
-        <a href="/en/index.html" class="header__logo">
-            <img src="/assets/icons/logo.svg" alt="Apollo 11 Who Said Better?">
+        <a href="/en/index.html" class="header__logo" aria-label="Back to home">
+            <img src="/assets/icons/logo.svg" alt="Apollo 11 Who Said Better?" width="120" height="60">
         </a>
-        <img src="/assets/icons/menu.svg" alt="Menu" class="header__menu">
+        <a href="/en/menu.html" class="header__menu" aria-label="Open navigation menu">
+            <img src="/assets/icons/menu.svg" alt="Menu" width="40" height="40">
+        </a>
     </header>
-    <a href="/fr/extrait.html" class="lang-switcher">FR</a>
+    
+    <a href="/fr/extrait.html" class="lang-switcher" aria-label="Passer en français" lang="fr">FR</a>
     
     <main class="extrait-livre">
-        <h1 class="extrait-livre__title">Excerpt from Women of Science Book</h1>
+        <h1 class="extrait-livre__title">Excerpt from the book Women of Science</h1>
+
 
         <section class="extrait-livre__block">
             <div class="extrait-livre__text">
-                <p>"It is sometimes said that women are well qualified for administrative and organizational work, but less gifted than men for the original labor required in the higher spheres of the academic or scientific worlds. It is still too early to be able to compile reliable statistics to combat this easy generalization, as the proportion of women capable of devoting their energy to pure research is still weak and only the future will be able to truly measure the fulfillment of their capacities. However, it is possible to emphasize that, even during this period of relative beginnings when they had more opportunities, women have created first-rate original works in many fields. In science, for example, we can cite, besides the famous name of Madame Curie, those of Dr. Florence Sabin, Professor Ellen Gleditsch, Professor Johanna Westerdijk, Professor Elisabeth Schiemann, Dr. Harriette Chick, Dr. G. Elles, – to name just a few among many who have made a valuable contribution to knowledge [...]. The names of women distinguished for their knowledge and originality can be cited in many other fields – archaeology, anthropology, history, philology, philosophy, jurisprudence, economics. In field research, in the planning and supervision of important excavations, women such as Miss G. Caton Thompson, Dr. Hanna Rydh and Dr. Dorothy Garrod have achieved remarkable success, thus refuting in a simple and effective manner the old postulate of women's inability to control and organize male workers."</p>
-                <a href="#" class="extrait-livre__link">Link</a>
+                <blockquote class="extrait-livre__quote">
+                    <p>"It is sometimes said that women are well qualified for administrative and organizational work, but less gifted than men for the original labor required by the higher spheres of the academic or scientific worlds. It is still too early to be able to compile reliable statistics to combat this easy generalization, as the proportion of women able to devote their energy to pure research is still small and only the future will allow us to truly measure the flourishing of their capacities. However, it is possible to point out that, even during this period of relative beginnings when they had more opportunities, women have created first-rate original work in many fields. In science, for example, we can cite, besides the famous name of Madame Curie, those of Dr. Florence Sabin, Professor Ellen Gleditsch, Professor Johanna Westerdijk, Professor Elisabeth Schiemann, Dr. Harriette Chick, Dr. G. Elles, – to name just a few among many who have made a valuable contribution to knowledge [...]. Names of women distinguished for their knowledge and originality can be cited in many other fields – archaeology, anthropology, history, philology, philosophy, jurisprudence, economics. In field research, in the planning and supervision of important excavations, women such as Miss G. Caton Thompson, Dr. Hanna Rydh and Dr. Dorothy Garrod have achieved remarkable success, thus simply and effectively refuting the old postulate of women's inability to control and organize male workers."</p>
+                </blockquote>
+                <a href="https://www.babelio.com/livres/Cabanel-Femmes-de-sciences/1331084" class="extrait-livre__link" aria-label="See the book on Babelio" target="_blank" rel="noopener noreferrer">
+                    <img src="/assets/icons/lienexterne.svg" alt="External link" loading="lazy" width="100" height="30">
+                </a>
             </div>
         </section>
 
+
         <nav class="extrait-livre__nav" aria-label="Navigation to other projects">
-            <a href="/en/other-projects.html" class="extrait-livre__nav-btn extrait-livre__nav-btn--cyan">
-                Other Projects <span>&rarr;</span>
+            <a href="/en/other-projects.html" class="extrait-livre__nav-link" aria-label="Discover other projects">
+                <img src="/assets/icons/lieninterneotherprojects.svg" alt="Other projects" loading="lazy" width="400" height="150">
             </a>
         </nav>
     </main>
 
+
     <footer class="footer">
-        <nav class="footer__links-group" aria-label="Footer links">
-            <a href="/en/about.html" class="footer__nav-item footer__nav-item--blue">About <span>&rarr;</span></a>
-            <a href="/en/contact.html" class="footer__nav-item footer__nav-item--yellow">Contact Form <span>&rarr;</span></a>
-            <a href="/en/glossary.html" class="footer__nav-item footer__nav-item--orange">Glossary <span>&rarr;</span></a>
-            <a href="mailto:noemie.caritey@edu.univ-fcomte.fr" class="footer__nav-item footer__nav-item--dark">Mailto <span>&rarr;</span></a>
-        </nav>
+        <!-- About -->
+        <div class="footer__nav-item footer__nav-item--about">
+            <div class="footer__nav-content">
+                <h2 class="footer__nav-title">About</h2>
+                <a href="/en/about.html" class="footer__nav-link" aria-label="Learn more about the project">
+                    <img src="/assets/icons/fleche.svg" alt="See more" loading="lazy" width="24" height="24">
+                </a>
+            </div>
+        </div>
+
+
+        <!-- Contact form -->
+        <div class="footer__nav-item footer__nav-item--contact">
+            <div class="footer__nav-content">
+                <h2 class="footer__nav-title">Contact Form</h2>
+                <a href="/en/contact.html" class="footer__nav-link" aria-label="Access the contact form">
+                    <img src="/assets/icons/fleche.svg" alt="See more" loading="lazy" width="24" height="24">
+                </a>
+            </div>
+        </div>
+
+
+        <!-- Glossary -->
+        <div class="footer__nav-item footer__nav-item--glossaire">
+            <div class="footer__nav-content">
+                <h2 class="footer__nav-title">Glossary</h2>
+                <a href="/en/glossary.html" class="footer__nav-link" aria-label="View the glossary">
+                    <img src="/assets/icons/fleche.svg" alt="See more" loading="lazy" width="24" height="24">
+                </a>
+            </div>
+        </div>
+
+
+        <!-- Mailto -->
+        <div class="footer__nav-item footer__nav-item--mailto">
+            <div class="footer__nav-content">
+                <h2 class="footer__nav-title">Mailto</h2>
+                <a href="mailto:noemie.caritey@edu.univ-fcomte.fr" class="footer__nav-link" aria-label="Send an email">
+                    <img src="/assets/icons/fleche.svg" alt="Send an email" loading="lazy" width="24" height="24">
+                </a>
+            </div>
+        </div>
+
+
+        <!-- Project information -->
         <div class="footer__content">
             <p class="footer__project">"Project completed in 2025 as part of a pedagogical exercise at the MMI department of Montbéliard"</p>
-            <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/" target="_blank" class="footer__link">https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/</a>
+            <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/" target="_blank" rel="noopener noreferrer" class="footer__link" aria-label="Visit the MMI department website, opens in a new tab">https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/</a>
+        </div>
+
+
+        <!-- Credits -->
+        <div class="footer__credits">
+            <p>Noémie CARITEY A2</p>
         </div>
     </footer>
 </body>

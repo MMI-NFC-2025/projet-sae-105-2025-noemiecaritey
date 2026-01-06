@@ -3,69 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apollo 11 Who Says Better?</title>
+    <meta name="description" content="Navigation menu - Apollo 11 Who Said Better">
+    <title>Menu - Apollo 11 Who Said Better?</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Actor&family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="../src/css/components/menu.css">
-
-<script src="/src/js/script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Actor&family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/css/components/menu.css">
+    <script src="/src/js/script.js" defer></script>
 </head>
 <body>
-    
+    <!-- Menu principal -->
+    <nav class="menu" aria-label="Main navigation menu">
+        <!-- En-tête sur une ligne -->
+        <div class="menu__header">
+            <h1 class="menu__title">Menu</h1>
+            
+            <div class="menu__top-right">
+                <a href="/fr/menu.html" class="lang-switcher" aria-label="Passer en français" lang="fr">FR</a>
+                <a href="/en/index.html" class="menu__close" aria-label="Close menu and return to home">
+                    <img src="/assets/icons/croix.svg" alt="Close menu" width="32" height="32">
+                </a>
+            </div>
+        </div>
+        
+        <!-- Liste des liens -->
+        <ul class="menu__list">
+            <li class="menu__item">
+                <a href="/en/biography.html" class="menu__link" aria-label="Discover Katherine Johnson's biography">
+                    The Researcher
+                    <img src="/assets/icons/fleche.svg" alt="" aria-hidden="true" class="menu__arrow" width="20" height="20">
+                </a>
+            </li>
+            
+            <li class="menu__item">
+                <a href="/en/vulgarisation.html" class="menu__link" aria-label="Understand the popularization of her theory">
+                    Popularization of Her Theory
+                    <img src="/assets/icons/fleche.svg" alt="" aria-hidden="true" class="menu__arrow" width="20" height="20">
+                </a>
+            </li>
+            
+            <li class="menu__item">
+                <a href="/en/women-science.html" class="menu__link" aria-label="Explore women of science in literature">
+                    Women of Science in Literature
+                    <img src="/assets/icons/fleche.svg" alt="" aria-hidden="true" class="menu__arrow" width="20" height="20">
+                </a>
+            </li>
+            
+            <li class="menu__item">
+                <a href="/en/hidden-figures.html" class="menu__link" aria-label="Discover the film Hidden Figures">
+                    Film
+                    <img src="/assets/icons/fleche.svg" alt="" aria-hidden="true" class="menu__arrow" width="20" height="20">
+                </a>
+            </li>
+            
+            <li class="menu__item">
+                <a href="/en/bu.html" class="menu__link" aria-label="See the library object">
+                    Library Object
+                    <img src="/assets/icons/fleche.svg" alt="" aria-hidden="true" class="menu__arrow" width="20" height="20">
+                </a>
+            </li>
+        </ul>
+    </nav>
 </body>
 </html>
-<!-- Main menu -->
-<nav class="menu">
-    <!-- Header on one line -->
-    <div class="menu__header">
-        <h1 class="menu__title">Menu</h1>
-        
-        <div class="menu__top-right">
-            <a href="/fr/menu.html" class="lang-switcher">FR</a>
-            <a href="/index.html" class="menu__close">
-                <img src="/assets/icons/croix.svg" alt="Close menu">
-            </a>
-        </div>
-    </div>
-    
-    <!-- List of links -->
-    <ul class="menu__list">
-        <li class="menu__item">
-            <a href="/en/biography.html" class="menu__link">
-                The Researcher
-                <img src="/assets/icons/fleche.svg" alt="" class="menu__arrow">
-            </a>
-        </li>
-        
-        <li class="menu__item">
-            <a href="/en/popularization.html" class="menu__link">
-                Popularization of her theory
-                <img src="/assets/icons/fleche.svg" alt="" class="menu__arrow">
-            </a>
-        </li>
-        
-        <li class="menu__item">
-            <a href="/en/women-sciences.html" class="menu__link">
-                Women of science in literature
-                <img src="/assets/icons/fleche.svg" alt="" class="menu__arrow">
-            </a>
-        </li>
-        
-        <li class="menu__item">
-            <a href="/en/hidden-figures.html" class="menu__link">
-                Film
-                <img src="/assets/icons/fleche.svg" alt="" class="menu__arrow">
-            </a>
-        </li>
-        
-        <li class="menu__item">
-            <a href="/en/bu.html" class="menu__link">
-                Library Object
-                <img src="/assets/icons/fleche.svg" alt="" class="menu__arrow">
-            </a>
-        </li>
-    </ul>
-</nav>
 

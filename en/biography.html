@@ -3,126 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Biography of Katherine Johnson, NASA mathematician who contributed to the Apollo 11 mission">
     <title>Biography of Katherine Johnson</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Actor&family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/src/css/style.css">
+    <script src="/src/js/script.js" defer></script>
 </head>
 <body>
     <header class="header">
-        <a href="/index.html" class="header__logo">
-            <img src="/assets/icons/logo.svg" alt="Apollo 11 Who Says Better?">
+        <a href="/en/index.html" class="header__logo" aria-label="Back to home">
+            <img src="/assets/icons/logo.svg" alt="Apollo 11 Who Said Better?" width="120" height="60">
         </a>
-        <a href="/en/menu.html" class="header__menu"></a>
-        <img src="/assets/icons/menu.svg" alt="Menu" class="header__menu">
+        <a href="/en/menu.html" class="header__menu" aria-label="Open navigation menu">
+            <img src="/assets/icons/menu.svg" alt="Menu" width="40" height="40">
+        </a>
     </header>
-    <a href="/fr/biography.html" class="lang-switcher">FR</a>
+    
+    <a href="/fr/biographie.html" class="lang-switcher" aria-label="Passer en français" lang="fr">FR</a>
+    
     <main class="biographie">
         <section class="biographie__hero">
-            <img src="/assets/img/biographie_1.avif" alt="Portrait Katherine Johnson" class="biographie__hero-img">
+            <img src="/assets/img/biographie_1.avif" alt="Katherine Johnson Portrait" class="biographie__hero-img" width="1200" height="600">
         </section>
-        <h1 class="biographie__title">Katherine Johnson, a woman who managed to put Man on the Moon</h1>
-        <p class="biographie__subtitle">One small step for Man but a giant leap for women.</p>
+        
+        <h1 class="biographie__title">Katherine Johnson, a woman who managed to bring Man to the Moon</h1>
+        <p class="biographie__subtitle">One small step for Man but one giant leap for women.</p>
+        
         <section class="biographie__block">
             <div class="biographie__img-wrap">
-                <img src="/assets/img/biographie_2.avif" alt="Young Katherine Johnson" class="biographie__img">
+                <img src="/assets/img/biographie_2.avif" alt="Young Katherine Johnson" class="biographie__img" loading="lazy" width="600" height="800">
             </div>
             <div class="biographie__text">
-                <p>Katherine Johnson born as Creola Katherine Coleman in <span class="biographie__highlight">1918</span> is an African-American mathematician and space engineer who <span class="biographie__highlight">actively participated in the Apollo 11 mission</span>.</p>
-                <p>After becoming the third Black student in West Virginia, she completed brilliant studies in <span class="biographie__highlight">mathematics</span> and French with the highest distinction.</p>
+                <p>Katherine Johnson born as Creola Katherine Coleman in <span class="biographie__highlight">1918</span> was an African-American mathematician and space engineer who <span class="biographie__highlight">actively participated in the Apollo 11 mission</span>.</p>
+                <p>After becoming the third black student in West Virginia, she completed brilliant studies in <span class="biographie__highlight">mathematics</span> and French with the highest distinction.</p>
             </div>
         </section>
+        
         <section class="biographie__block biographie__block--reverse">
             <div class="biographie__img-wrap">
-                <img src="/assets/img/biographie_3.avif" alt="Katherine Johnson at NASA" class="biographie__img">
+                <img src="/assets/img/biographie_3.avif" alt="Katherine Johnson at NASA" class="biographie__img" loading="lazy" width="600" height="800">
             </div>
             <div class="biographie__text">
-                <h2 class="biographie__subtitle biographie__subtitle--in-text">An assignment <br>that changes everything</h2>
-                <p>She continued her career in teaching then found a position at <span class="biographie__highlight">NACA</span>, the former name of <span class="biographie__highlight">NASA</span>. Upon her arrival, she was assigned with other women to mathematical calculations for aircraft black boxes.</p>
-                <p>She was temporarily assigned to help the male research team on flights. It was at this moment that she was <span class="biographie__highlight">noticed</span> and became <span class="biographie__highlight">indispensable</span> to the team.</p>
+                <p class="biographie__subtitle biographie__subtitle--in-text">An assignment <br>that changes everything</p>
+                <p>She continued her career in teaching and then found a position at <span class="biographie__highlight">NACA</span>, the former name of <span class="biographie__highlight">NASA</span>. Upon her arrival, she was assigned with other women to the mathematical calculations of aircraft black boxes.</p>
+                <p>She was temporarily assigned to help the male research team on flights. It was at that moment that she was <span class="biographie__highlight">noticed</span> and became <span class="biographie__highlight">indispensable</span> to the team.</p>
             </div>
         </section>
+        
         <section class="biographie__block">
-            <div class="biographie__img-wrap--bottom">
-                <img src="/assets/img/biographie_4.avif" alt="Katherine Johnson " class="biographie__img">
+            <div class="biographie__img-wrap biographie__img-wrap--bottom">
+                <img src="/assets/img/biographie_4.avif" alt="Katherine Johnson working on calculations" class="biographie__img" loading="lazy" width="600" height="400">
             </div>
             <div class="biographie__text">
-                <h2 class="biographie__subtitle">What she deserves</h2>
+                <p class="biographie__subtitle">What she deserves</p>
                 <p>She then participated in the <span class="biographie__highlight">Apollo 11</span> mission, one of the first space conquests.<br>
-                Thanks to her calculations, she enabled <span class="biographie__highlight">the success of the mission</span> by calculating the space rendezvous between the two modules but also by calculating the launch window for the rockets.</p>
+                Thanks to her calculations, she enabled <span class="biographie__highlight">the mission's success</span> by calculating the space rendezvous between the two modules as well as the rocket launch window.</p>
                 <p>Katherine Johnson verified all the computer calculations so that man could take the first step on the Moon.</p>
-                <a href="#" class="biographie__link">
-                <img src="/assets/icons/lienexterne.svg" alt="External link">
+                
+                <a href="https://www.nasa.gov/people/katherine-johnson/" class="biographie__link" aria-label="See external link to NASA page" target="_blank" rel="noopener noreferrer">
+                    <img src="/assets/icons/lienexterne.svg" alt="External link" loading="lazy" width="100" height="30">
                 </a>
-            <div class="biographie__internal-links">
-    <a href="/en/popularization.html" class="biographie__internal-link">
-        <img src="/assets/icons/lieninternevulgarisation.svg" alt="popularization">
-    </a> 
-    <a href="/en/timeline.html" class="biographie__internal-link">
-        <img src="/assets/icons/lieninternefrise.svg" alt="timeline">
-    </a>
-</div>
-
-
+                
+                <nav class="biographie__internal-links" aria-label="Related links">
+                    <a href="/en/vulgarisation.html" class="biographie__internal-link" aria-label="Discover the popularization of her theory">
+                        <img src="/assets/icons/lieninternepopularization.svg" alt="Popularization" loading="lazy" width="500" height="150">
+                    </a> 
+                    <a href="/en/timeline.html" class="biographie__internal-link" aria-label="View the timeline">
+                        <img src="/assets/icons/lieninternetimeline.svg" alt="Timeline" loading="lazy" width="500" height="150">
+                    </a>
+                </nav>
             </div>
         </section>
     </main>
 
 
-<footer class="footer">
-    <!-- About -->
-    <div class="footer__nav-item footer__nav-item--about">
-        <div class="footer__nav-content">
-            <h2 class="footer__nav-title">About</h2>
-            <a href="/en/about.html" class="footer__nav-link">
-                <img src="/assets/icons/fleche.svg" alt="See more">
-            </a>
+    <footer class="footer">
+        <!-- About -->
+        <div class="footer__nav-item footer__nav-item--about">
+            <div class="footer__nav-content">
+                <h2 class="footer__nav-title">About</h2>
+                <a href="/en/about.html" class="footer__nav-link" aria-label="Learn more about the project">
+                    <img src="/assets/icons/fleche.svg" alt="See more" width="24" height="24" loading="lazy">
+                </a>
+            </div>
         </div>
-    </div>
 
 
-    <!-- Contact Form -->
-    <div class="footer__nav-item footer__nav-item--contact">
-        <div class="footer__nav-content">
-            <h2 class="footer__nav-title">Contact Form</h2>
-            <a href="/en/contact.html" class="footer__nav-link">
-                <img src="/assets/icons/fleche.svg" alt="See more">
-            </a>
+        <!-- Contact form -->
+        <div class="footer__nav-item footer__nav-item--contact">
+            <div class="footer__nav-content">
+                <h2 class="footer__nav-title">Contact Form</h2>
+                <a href="/en/contact.html" class="footer__nav-link" aria-label="Access the contact form">
+                    <img src="/assets/icons/fleche.svg" alt="See more" width="24" height="24" loading="lazy">
+                </a>
+            </div>
         </div>
-    </div>
 
 
-    <!-- Glossary -->
-    <div class="footer__nav-item footer__nav-item--glossaire">
-        <div class="footer__nav-content">
-            <h2 class="footer__nav-title">Glossary</h2>
-            <a href="/en/glossary.html" class="footer__nav-link">
-                <img src="/assets/icons/fleche.svg" alt="See more">
-            </a>
+        <!-- Glossary -->
+        <div class="footer__nav-item footer__nav-item--glossaire">
+            <div class="footer__nav-content">
+                <h2 class="footer__nav-title">Glossary</h2>
+                <a href="/en/glossary.html" class="footer__nav-link" aria-label="View the glossary">
+                    <img src="/assets/icons/fleche.svg" alt="See more" width="24" height="24" loading="lazy">
+                </a>
+            </div>
         </div>
-    </div>
 
 
-    <!-- Email -->
-    <div class="footer__nav-item footer__nav-item--mailto">
-        <div class="footer__nav-content">
-            <h2 class="footer__nav-title">Email</h2>
-            <a href="mailto:noemie.caritey@edu.univ-fcomte.fr" class="footer__nav-link">
-                <img src="/assets/icons/fleche.svg" alt="Send an email">
-            </a>
+        <!-- Mailto -->
+        <div class="footer__nav-item footer__nav-item--mailto">
+            <div class="footer__nav-content">
+                <h2 class="footer__nav-title">Mailto</h2>
+                <a href="mailto:noemie.caritey@edu.univ-fcomte.fr" class="footer__nav-link" aria-label="Send an email">
+                    <img src="/assets/icons/fleche.svg" alt="Send an email" width="24" height="24" loading="lazy">
+                </a>
+            </div>
         </div>
-    </div>
 
 
-    <!-- Project Information -->
-    <div class="footer__content">
-        <p class="footer__project">"project completed in 2025 as part of an educational exercise in the MMi department of Montbéliard"</p>
-        <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/" target="_blank" class="footer__link">https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/</a>
-    </div>
+        <!-- Project information -->
+        <div class="footer__content">
+            <p class="footer__project">"Project completed in 2025 as part of a pedagogical exercise at the MMI department of Montbéliard"</p>
+            <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/" target="_blank" rel="noopener noreferrer" class="footer__link" aria-label="Visit the MMI department website, opens in a new tab">https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/</a>
+        </div>
 
 
-    <!-- Credits -->
-    <div class="footer__credits">
-        <p>Noémie CARITEY A2</p>
-    </div>
-</footer>
+        <!-- Credits -->
+        <div class="footer__credits">
+            <p>Noémie CARITEY A2</p>
+        </div>
+    </footer>
 </body>
 </html>

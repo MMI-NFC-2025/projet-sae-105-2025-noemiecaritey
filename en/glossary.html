@@ -3,83 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Glossary of scientific terms related to women of science: DNA, NASA, nuclear fission, pulsars and more">
     <title>Glossary</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Actor&family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/src/css/style.css">
+    <script src="/src/js/script.js" defer></script>
 </head>
 <body>
     <header class="header">
-        <a href="/en/index.html" class="header__logo">
-            <img src="/assets/icons/logo.svg" alt="Apollo 11 Who Said Better?">
+        <a href="/en/index.html" class="header__logo" aria-label="Back to home">
+            <img src="/assets/icons/logo.svg" alt="Apollo 11 Who Said Better?" width="120" height="60">
         </a>
-        <img src="/assets/icons/menu.svg" alt="Menu" class="header__menu">
+        <a href="/en/menu.html" class="header__menu" aria-label="Open navigation menu">
+            <img src="/assets/icons/menu.svg" alt="Menu" width="40" height="40">
+        </a>
     </header>
-    <a href="/fr/glossaire.html" class="lang-switcher">FR</a>
+    
+    <a href="/fr/glossaire.html" class="lang-switcher" aria-label="Passer en français" lang="fr">FR</a>
     
     <main class="glossaire">
         <h1 class="glossaire__title">Glossary</h1>
 
+
         <dl class="glossaire__list">
             <!-- DNA -->
-            <dt class="glossaire__term">DNA:</dt>
-            <dd class="glossaire__definition">Acid from the nucleus of living cells, an essential component of chromosomes and carrier of genetic characteristics.</dd>
+            <dt class="glossaire__term">DNA</dt>
+            <dd class="glossaire__definition">Acid from the nucleus of living cells, essential component of chromosomes and carrier of genetic characteristics.</dd>
+
 
             <!-- Trajectory calculation -->
-            <dt class="glossaire__term">Trajectory Calculation:</dt>
-            <dd class="glossaire__definition">Trajectory calculation is when we seek to know where an object will pass and where it will arrive after leaving a location.</dd>
+            <dt class="glossaire__term">Trajectory calculation</dt>
+            <dd class="glossaire__definition">Trajectory calculation is when we seek to know where an object will pass and where it will arrive after leaving a place.</dd>
 
-            <!-- Y Chromosome -->
-            <dt class="glossaire__term">Y Chromosome:</dt>
+
+            <!-- Y chromosome -->
+            <dt class="glossaire__term">Y chromosome</dt>
             <dd class="glossaire__definition">It is the male sex chromosome.</dd>
 
+
             <!-- Nuclear fission -->
-            <dt class="glossaire__term">Nuclear Fission:</dt>
+            <dt class="glossaire__term">Nuclear fission</dt>
             <dd class="glossaire__definition">Fission is the splitting of a heavy atom into lighter atoms during the collision between an atom and a neutron.</dd>
 
+
             <!-- NASA -->
-            <dt class="glossaire__term">NASA (National Aeronautics and Space Administration):</dt>
-            <dd class="glossaire__definition">It is the federal agency responsible for most of the United States civilian space program</dd>
+            <dt class="glossaire__term">NASA (National Aeronautics and Space Administration)</dt>
+            <dd class="glossaire__definition">It is the federal agency responsible for most of the United States' civilian space program.</dd>
+
 
             <!-- Particle physics -->
-            <dt class="glossaire__term">Particle Physics:</dt>
+            <dt class="glossaire__term">Particle physics</dt>
             <dd class="glossaire__definition">It is the branch of physics that studies the elementary constituents of matter and radiation, as well as their interactions.</dd>
 
+
             <!-- Computer program -->
-            <dt class="glossaire__term">Computer Program:</dt>
+            <dt class="glossaire__term">Computer program</dt>
             <dd class="glossaire__definition">It is a set of instructions and operations intended to be executed by a computer.</dd>
 
+
             <!-- Pulsars -->
-            <dt class="glossaire__term">Pulsars:</dt>
+            <dt class="glossaire__term">Pulsars</dt>
             <dd class="glossaire__definition">These small, very dense dead stars emit electromagnetic radiation in the form of beams that sweep through space at regular intervals, like cosmic lighthouses.</dd>
 
+
             <!-- Space rendezvous -->
-            <dt class="glossaire__term">Space Rendezvous:</dt>
-            <dd class="glossaire__definition">It is an organized meeting in space between spacecraft, or between a spacecraft and a celestial object at zero or very low relative speed.</dd>
+            <dt class="glossaire__term">Space rendezvous</dt>
+            <dd class="glossaire__definition">It is an organized meeting in space between spacecraft, or between a spacecraft and a celestial object at a relative velocity of zero or very low.</dd>
+
 
             <!-- Cubic root -->
-            <dt class="glossaire__term">Cubic Root:</dt>
-            <dd class="glossaire__definition">A mathematical notion concerning numbers, which is equal to its real cubic root multiplied twice by itself.</dd>
+            <dt class="glossaire__term">Cubic root</dt>
+            <dd class="glossaire__definition">A mathematical concept that concerns numbers, is therefore equal to its real cubic root multiplied twice by itself.</dd>
+
 
             <!-- Rehabilitation -->
-            <dt class="glossaire__term">Rehabilitation:</dt>
-            <dd class="glossaire__definition">To restore to one's rights, to restore the esteem and consideration that had been lost.</dd>
+            <dt class="glossaire__term">Rehabilitation</dt>
+            <dd class="glossaire__definition">Restore to their rights, make them regain the esteem, the consideration they had lost.</dd>
+
 
             <!-- Shell structure of the atomic nucleus -->
-            <dt class="glossaire__term">Shell Structure of the Atomic Nucleus:</dt>
+            <dt class="glossaire__term">Shell structure of the atomic nucleus</dt>
             <dd class="glossaire__definition">In an atom, electrons are distributed in shells around the nucleus, with successive shells being increasingly distant from the nucleus.</dd>
         </dl>
     </main>
 
+
     <footer class="footer">
-        <nav class="footer__links-group" aria-label="Footer links">
-            <a href="/en/about.html" class="footer__nav-item footer__nav-item--blue">About <span>&rarr;</span></a>
-            <a href="/en/contact.html" class="footer__nav-item footer__nav-item--yellow">Contact Form <span>&rarr;</span></a>
-            <a href="/en/glossary.html" class="footer__nav-item footer__nav-item--orange">Glossary <span>&rarr;</span></a>
-            <a href="mailto:noemie.caritey@edu.univ-fcomte.fr" class="footer__nav-item footer__nav-item--dark">Mailto <span>&rarr;</span></a>
-        </nav>
+        <!-- About -->
+        <div class="footer__nav-item footer__nav-item--about">
+            <div class="footer__nav-content">
+                <h2 class="footer__nav-title">About</h2>
+                <a href="/en/about.html" class="footer__nav-link" aria-label="Learn more about the project">
+                    <img src="/assets/icons/fleche.svg" alt="See more" width="24" height="24" loading="lazy">
+                </a>
+            </div>
+        </div>
+
+
+        <!-- Contact form -->
+        <div class="footer__nav-item footer__nav-item--contact">
+            <div class="footer__nav-content">
+                <h2 class="footer__nav-title">Contact Form</h2>
+                <a href="/en/contact.html" class="footer__nav-link" aria-label="Access the contact form">
+                    <img src="/assets/icons/fleche.svg" alt="See more" width="24" height="24" loading="lazy">
+                </a>
+            </div>
+        </div>
+
+
+        <!-- Glossary -->
+        <div class="footer__nav-item footer__nav-item--glossaire">
+            <div class="footer__nav-content">
+                <h2 class="footer__nav-title">Glossary</h2>
+                <a href="/en/glossary.html" class="footer__nav-link" aria-label="View the glossary">
+                    <img src="/assets/icons/fleche.svg" alt="See more" width="24" height="24" loading="lazy">
+                </a>
+            </div>
+        </div>
+
+
+        <!-- Mailto -->
+        <div class="footer__nav-item footer__nav-item--mailto">
+            <div class="footer__nav-content">
+                <h2 class="footer__nav-title">Mailto</h2>
+                <a href="mailto:noemie.caritey@edu.univ-fcomte.fr" class="footer__nav-link" aria-label="Send an email">
+                    <img src="/assets/icons/fleche.svg" alt="Send an email" width="24" height="24" loading="lazy">
+                </a>
+            </div>
+        </div>
+
+
+        <!-- Project information -->
         <div class="footer__content">
             <p class="footer__project">"Project completed in 2025 as part of a pedagogical exercise at the MMI department of Montbéliard"</p>
-            <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/" target="_blank" class="footer__link">https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/</a>
-            <p class="footer__author">Noémie CARITEY A2</p>
+            <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/" target="_blank" rel="noopener noreferrer" class="footer__link" aria-label="Visit the MMI department website, opens in a new tab">https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/</a>
+        </div>
+
+
+        <!-- Credits -->
+        <div class="footer__credits">
+            <p>Noémie CARITEY A2</p>
         </div>
     </footer>
 </body>
