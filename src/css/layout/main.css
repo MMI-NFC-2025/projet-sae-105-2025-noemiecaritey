@@ -1,0 +1,91 @@
+/* ===================================
+   PAGES AVEC LAYOUT SIMILAIRE
+   =================================== */
+
+.femmes-sciences,
+.objet-bu,
+.extrait-livre,
+.autres-projets,
+.a-propos,
+.galerie,
+.bande-annonce {
+    max-width: 100%;
+    margin: 0;
+    font-family: 'Actor', sans-serif;
+    background-color: var(--color-white);
+}
+
+.femmes-sciences,
+.extrait-livre,
+.autres-projets,
+.a-propos,
+.galerie,
+.bande-annonce {
+    padding: var(--spacing-large) 15px;
+}
+
+.objet-bu {
+    padding: 0;
+}
+
+/* Blocs de contenu similaires */
+.femmes-sciences__block,
+.femmes-sciences__block--reverse,
+.objet-bu__block,
+.objet-bu__block--reverse,
+.extrait-livre__block,
+.a-propos__block {
+    margin: 0 0 3rem 0;
+    padding: 0;
+}
+
+.femmes-sciences__block,
+.femmes-sciences__block--reverse,
+.extrait-livre__block,
+.a-propos__block {
+    max-width: none;
+}
+
+.objet-bu__block,
+.objet-bu__block--reverse {
+    max-width: none;
+    padding: 0 15px;
+}
+
+/* Textes */
+.femmes-sciences__text,
+.objet-bu__text,
+.extrait-livre__text,
+.a-propos__text {
+    margin-bottom: var(--spacing-large);
+}
+
+.femmes-sciences__text p,
+.objet-bu__text p,
+.extrait-livre__text p,
+.a-propos__text p {
+    font-family: 'Cairo', sans-serif;
+    font-size: var(--font-s);
+    color: #000;
+}
+
+.femmes-sciences__text p,
+.objet-bu__text p {
+    line-height: var(--line-height-base);
+    margin-bottom: var(--spacing-medium);
+}
+
+.objet-bu__text p {
+    line-height: 1.65;
+}
+
+.extrait-livre__text p {
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.a-propos__text p {
+    line-height: 1.7;
+    margin-bottom: 1.25rem;
+}

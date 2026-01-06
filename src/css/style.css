@@ -7,6 +7,7 @@
 /* Layout */
 @import url('./layout/header.css');
 @import url('./layout/footer.css');
+@import url('./layout/main.css');
 
 /* Components */
 @import url('./components/lang-switcher.css');
@@ -17,3 +18,9 @@
 @import url('./components/btn.css');
 @import url('./components/section.css');
 @import url('./components/page.css');
+
+/* Vendors */
+@import url('./vendors/normalize.css');
+
+/* utils*/
+@import url('./utils/variables.css');
