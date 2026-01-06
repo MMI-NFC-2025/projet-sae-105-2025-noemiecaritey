@@ -3,45 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulaire de contact pour le projet Apollo 11 qui dit Mieux">
     <title>Formulaire de contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Actor&family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/src/css/style.css">
+    <script src="/src/js/script.js" defer></script>
 </head>
 <body>
     <header class="header">
-        <a href="/index.html" class="header__logo">
+        <a href="/fr/index.html" class="header__logo" aria-label="Retour à l'accueil">
             <img src="/assets/icons/logo.svg" alt="Apollo 11 qui dit Mieux ?">
         </a>
-        <a href="/fr/menu.html" class="header__menu"></a>
-        <img src="/assets/icons/menu.svg" alt="Menu" class="header__menu">
+        <a href="/fr/menu.html" class="header__menu" aria-label="Ouvrir le menu de navigation">
+            <img src="/assets/icons/menu.svg" alt="Menu">
+        </a>
     </header>
-    <a href="/en/contact.html" class="lang-switcher">ENG</a>
+    
+    <a href="/en/contact.html" class="lang-switcher" aria-label="Switch to English" lang="en">ENG</a>
     
     <main class="contact">
         <h1 class="contact__title">Formulaire de contact</h1>
 
-        <form class="contact__form" action="#" method="post">
+        <form class="contact__form" action="#" method="post" aria-labelledby="contact-title">
             <!-- Champ Nom -->
             <div class="contact__form-group">
-                <label for="nom" class="contact__label">Nom:</label>
-                <input type="text" id="nom" name="nom" class="contact__input" required>
+                <label for="nom" class="contact__label">Nom <span aria-label="requis">*</span></label>
+                <input type="text" 
+                       id="nom" 
+                       name="nom" 
+                       class="contact__input" 
+                       required 
+                       aria-required="true"
+                       autocomplete="family-name">
             </div>
 
             <!-- Champ Prénom -->
             <div class="contact__form-group">
-                <label for="prenom" class="contact__label">Prénom:</label>
-                <input type="text" id="prenom" name="prenom" class="contact__input" required>
+                <label for="prenom" class="contact__label">Prénom <span aria-label="requis">*</span></label>
+                <input type="text" 
+                       id="prenom" 
+                       name="prenom" 
+                       class="contact__input" 
+                       required 
+                       aria-required="true"
+                       autocomplete="given-name">
             </div>
 
             <!-- Champ Date de naissance -->
             <div class="contact__form-group">
-                <label for="date-naissance" class="contact__label">Date de naissance:</label>
-                <input type="date" id="date-naissance" name="date-naissance" class="contact__input" required>
+                <label for="date-naissance" class="contact__label">Date de naissance <span aria-label="requis">*</span></label>
+                <input type="date" 
+                       id="date-naissance" 
+                       name="date-naissance" 
+                       class="contact__input" 
+                       required 
+                       aria-required="true"
+                       autocomplete="bday">
             </div>
 
             <!-- Champ Adresse mail -->
             <div class="contact__form-group">
-                <label for="email" class="contact__label">Adresse mail:</label>
-                <input type="email" id="email" name="email" class="contact__input" required>
+                <label for="email" class="contact__label">Adresse mail <span aria-label="requis">*</span></label>
+                <input type="email" 
+                       id="email" 
+                       name="email" 
+                       class="contact__input" 
+                       required 
+                       aria-required="true"
+                       autocomplete="email"
+                       aria-describedby="email-format">
+                <span id="email-format" class="contact__helper-text">Format attendu : exemple@domaine.com</span>
             </div>
 
             <!-- Bouton Envoyer -->
@@ -49,57 +82,57 @@
         </form>
     </main>
 
-<footer class="footer">
-    <!-- À propos -->
-    <div class="footer__nav-item footer__nav-item--about">
-        <div class="footer__nav-content">
-            <h2 class="footer__nav-title">À propos</h2>
-            <a href="/fr/a-propos.html" class="footer__nav-link">
-                <img src="/assets/icons/fleche.svg" alt="Voir plus">
-            </a>
+    <footer class="footer">
+        <!-- À propos -->
+        <div class="footer__nav-item footer__nav-item--about">
+            <div class="footer__nav-content">
+                <h2 class="footer__nav-title">À propos</h2>
+                <a href="/fr/a-propos.html" class="footer__nav-link" aria-label="En savoir plus sur le projet">
+                    <img src="/assets/icons/fleche.svg" alt="Voir plus" loading="lazy">
+                </a>
+            </div>
         </div>
-    </div>
 
-    <!-- Formulaire de contact -->
-    <div class="footer__nav-item footer__nav-item--contact">
-        <div class="footer__nav-content">
-            <h2 class="footer__nav-title">Formulaire de contact</h2>
-            <a href="/fr/contact.html" class="footer__nav-link">
-                <img src="/assets/icons/fleche.svg" alt="Voir plus">
-            </a>
+        <!-- Formulaire de contact -->
+        <div class="footer__nav-item footer__nav-item--contact">
+            <div class="footer__nav-content">
+                <h2 class="footer__nav-title">Formulaire de contact</h2>
+                <a href="/fr/contact.html" class="footer__nav-link" aria-label="Accéder au formulaire de contact">
+                    <img src="/assets/icons/fleche.svg" alt="Voir plus" loading="lazy">
+                </a>
+            </div>
         </div>
-    </div>
 
-    <!-- Glossaire -->
-    <div class="footer__nav-item footer__nav-item--glossaire">
-        <div class="footer__nav-content">
-            <h2 class="footer__nav-title">Glossaire</h2>
-            <a href="/fr/glossaire.html" class="footer__nav-link">
-                <img src="/assets/icons/fleche.svg" alt="Voir plus">
-            </a>
+        <!-- Glossaire -->
+        <div class="footer__nav-item footer__nav-item--glossaire">
+            <div class="footer__nav-content">
+                <h2 class="footer__nav-title">Glossaire</h2>
+                <a href="/fr/glossaire.html" class="footer__nav-link" aria-label="Consulter le glossaire">
+                    <img src="/assets/icons/fleche.svg" alt="Voir plus" loading="lazy">
+                </a>
+            </div>
         </div>
-    </div>
 
-    <!-- Mailto -->
-    <div class="footer__nav-item footer__nav-item--mailto">
-        <div class="footer__nav-content">
-            <h2 class="footer__nav-title">Mailto</h2>
-            <a href="mailto:noemie.caritey@edu.univ-fcomte.fr" class="footer__nav-link">
-                <img src="/assets/icons/fleche.svg" alt="Envoyer un email">
-            </a>
+        <!-- Mailto -->
+        <div class="footer__nav-item footer__nav-item--mailto">
+            <div class="footer__nav-content">
+                <h2 class="footer__nav-title">Mailto</h2>
+                <a href="mailto:noemie.caritey@edu.univ-fcomte.fr" class="footer__nav-link" aria-label="Envoyer un email">
+                    <img src="/assets/icons/fleche.svg" alt="Envoyer un email" loading="lazy">
+                </a>
+            </div>
         </div>
-    </div>
 
-    <!-- Informations projet -->
-    <div class="footer__content">
-        <p class="footer__project">« projet réalisé en 2025 dans le cadre d'un exercice pédagogique au département MMi de Montbéliard »</p>
-        <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/" target="_blank" class="footer__link">https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/</a>
-    </div>
+        <!-- Informations projet -->
+        <div class="footer__content">
+            <p class="footer__project">« projet réalisé en 2025 dans le cadre d'un exercice pédagogique au département MMi de Montbéliard »</p>
+            <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/" target="_blank" rel="noopener noreferrer" class="footer__link" aria-label="Visiter le site du département MMi, ouvre dans un nouvel onglet">https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/</a>
+        </div>
 
-    <!-- Crédits -->
-    <div class="footer__credits">
-        <p>Noémie CARITEY A2</p>
-    </div>
-</footer>
+        <!-- Crédits -->
+        <div class="footer__credits">
+            <p>Noémie CARITEY A2</p>
+        </div>
+    </footer>
 </body>
 </html>

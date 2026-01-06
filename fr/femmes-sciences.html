@@ -1,21 +1,27 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez la représentation des femmes scientifiques dans la littérature, de l'invisibilité à la reconnaissance">
     <title>Les femmes de science dans la littérature</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Actor&family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/src/css/style.css">
+    <script src="/src/js/script.js" defer></script>
 </head>
 <body>
     <header class="header">
-        <a href="/index.html" class="header__logo">
+        <a href="/fr/index.html" class="header__logo" aria-label="Retour à l'accueil">
             <img src="/assets/icons/logo.svg" alt="Apollo 11 qui dit Mieux ?">
         </a>
-        <a href="/fr/menu.html" class="header__menu"></a>
-        <img src="/assets/icons/menu.svg" alt="Menu" class="header__menu">
+        <a href="/fr/menu.html" class="header__menu" aria-label="Ouvrir le menu de navigation">
+            <img src="/assets/icons/menu.svg" alt="Menu">
+        </a>
     </header>
-    <a href="/en/women-science-literature.html" class="lang-switcher">ENG</a>
+    
+    <a href="/en/women-science-literature.html" class="lang-switcher" aria-label="Switch to English" lang="en">ENG</a>
     
     <main class="femmes-sciences">
         <section class="femmes-sciences__hero">
@@ -27,24 +33,25 @@
         <section class="femmes-sciences__block">
             <div class="femmes-sciences__text">
                 <h2 class="femmes-sciences__subtitle">Une figure longtemps effacée</h2>
-                <p>La littérature, en particulier jusqu'au XIXᵉ siècle, a <span class="femmes-sciences__highlight">rarement</span> mis en avant les femmes scientifiques.</p>
+                <p>La littérature, en particulier jusqu'au XIX<sup>e</sup> siècle, a <span class="femmes-sciences__highlight">rarement</span> mis en avant les femmes scientifiques.</p>
                 <p>Plusieurs raisons expliquent cela :</p>
                 <ul>
-                    <li><span class="femmes-sciences__highlight">L'accès limité</span> des femmes aux études scientifiques, surtout avant le XXᵉ siècle.</li>
+                    <li><span class="femmes-sciences__highlight">L'accès limité</span> des femmes aux études scientifiques, surtout avant le XX<sup>e</sup> siècle.</li>
                     <li><span class="femmes-sciences__highlight">Les préjugés sociaux</span>, qui réduisaient souvent la femme à la sphère domestique.</li>
                     <li>L'image du savant <span class="femmes-sciences__highlight">associée à la figure masculine</span>, renforcée par les récits et biographies d'époque.</li>
                 </ul>
                 <p>Ainsi, on trouve plus souvent dans les romans anciens des femmes passionnées de sciences <span class="femmes-sciences__highlight">en marge</span> ou présentées comme des « curiosités » plutôt que comme des actrices centrales.</p>
-                <a href="#" class="femmes-sciences__link">Lien</a>
+                <a href="#" class="biographie__link" aria-label="Voir le lien externe">
+                <img src="/assets/icons/lienexterne.svg" alt="Lien externe" loading="lazy">
+            </a>
             </div>
             <div class="femmes-sciences__img-wrap">
-                <img src="/assets/img/femmesdescinces_2.avif" alt="Illustration femme scientifique" class="femmes-sciences__img">
             </div>
         </section>
 
         <section class="femmes-sciences__block femmes-sciences__block--reverse">
             <div class="femmes-sciences__img-wrap">
-                <img src="/assets/img/femmesdesciences_3.avif" alt="Portraits de femmes scientifiques" class="femmes-sciences__img">
+                <img src="/assets/img/femmesdesciences_3.avif" alt="Portraits de femmes scientifiques pionnières" class="femmes-sciences__img" loading="lazy">
             </div>
             <div class="femmes-sciences__text">
                 <h2 class="femmes-sciences__subtitle">Les pionnières représentées en littérature</h2>
@@ -66,7 +73,6 @@
                 <p><span class="femmes-sciences__highlight">La science-fiction</span>, en particulier depuis Ursula K. Le Guin ou Margaret Atwood, introduit des personnages féminins qui combinent intelligence scientifique et réflexion critique.</p>
             </div>
             <div class="femmes-sciences__img-wrap">
-                <img src="/assets/img/femmesdesciences_4.avif" alt="Groupe de femmes scientifiques" class="femmes-sciences__img">
             </div>
         </section>
 
@@ -75,71 +81,72 @@
                 <h2 class="femmes-sciences__subtitle">Un enjeu de mémoire et d'imaginaire</h2>
                 <p>Les femmes de science dans la littérature ne sont pas seulement des personnages, elles deviennent des symboles. Leur présence (ou leur absence) reflète <span class="femmes-sciences__highlight">la place réelle</span> des femmes dans la recherche scientifique à une époque donnée.</p>
                 <p>Aujourd'hui, les écrivains contribuent à réparer <span class="femmes-sciences__highlight">une injustice symbolique</span>, en offrant des récits où les chercheuses, mathématiciennes, physiciennes ou biologistes sont <span class="femmes-sciences__highlight">centrales</span> et <span class="femmes-sciences__highlight">reconnues</span>.</p>
-                <a href="#" class="femmes-sciences__link">Lien</a>
+                <a href="#" class="biographie__link" aria-label="Voir le lien externe">
+                <img src="/assets/icons/lienexterne.svg" alt="Lien externe" loading="lazy">
             </div>
         </section>
 
-        <nav class="femmes-sciences__nav" aria-label="Navigation vers contenus liés">
-            <a href="#" class="femmes-sciences__nav-btn femmes-sciences__nav-btn--yellow">
-                Femmes de sciences d'Anna Cabanel <span>&rarr;</span>
+        <nav class="biographie__internal-links" aria-label="Liens connexes">
+            <a href="/fr/bu.html" class="biographie__internal-link" aria-label="Découvrir livre de sa théorie">
+                <img src="/assets/icons/lieninternefemmesdesciences.svg" alt="livre" loading="lazy">
             </a>
-            <a href="#" class="femmes-sciences__nav-btn femmes-sciences__nav-btn--purple">
-                Frise chronologique <span>&rarr;</span>
+            <a href="/fr/frise-chronologique.html" class="biographie__internal-link" aria-label="Découvrir la frise chronologique de sa théorie">
+                <img src="/assets/icons/lieninternefrise.svg" alt="frise chronologique" loading="lazy">
             </a>
         </nav>
     </main>
 
- <footer class="footer">
-    <!-- À propos -->
-    <div class="footer__nav-item footer__nav-item--about">
-        <div class="footer__nav-content">
-            <h2 class="footer__nav-title">À propos</h2>
-            <a href="/fr/a-propos.html" class="footer__nav-link">
-                <img src="/assets/icons/fleche.svg" alt="Voir plus">
-            </a>
+    <footer class="footer">
+        <!-- À propos -->
+        <div class="footer__nav-item footer__nav-item--about">
+            <div class="footer__nav-content">
+                <h2 class="footer__nav-title">À propos</h2>
+                <a href="/fr/a-propos.html" class="footer__nav-link" aria-label="En savoir plus sur le projet">
+                    <img src="/assets/icons/fleche.svg" alt="Voir plus" loading="lazy">
+                </a>
+            </div>
         </div>
-    </div>
 
-    <!-- Formulaire de contact -->
-    <div class="footer__nav-item footer__nav-item--contact">
-        <div class="footer__nav-content">
-            <h2 class="footer__nav-title">Formulaire de contact</h2>
-            <a href="/fr/contact.html" class="footer__nav-link">
-                <img src="/assets/icons/fleche.svg" alt="Voir plus">
-            </a>
+        <!-- Formulaire de contact -->
+        <div class="footer__nav-item footer__nav-item--contact">
+            <div class="footer__nav-content">
+                <h2 class="footer__nav-title">Formulaire de contact</h2>
+                <a href="/fr/contact.html" class="footer__nav-link" aria-label="Accéder au formulaire de contact">
+                    <img src="/assets/icons/fleche.svg" alt="Voir plus" loading="lazy">
+                </a>
+            </div>
         </div>
-    </div>
 
-    <!-- Glossaire -->
-    <div class="footer__nav-item footer__nav-item--glossaire">
-        <div class="footer__nav-content">
-            <h2 class="footer__nav-title">Glossaire</h2>
-            <a href="/fr/glossaire.html" class="footer__nav-link">
-                <img src="/assets/icons/fleche.svg" alt="Voir plus">
-            </a>
+        <!-- Glossaire -->
+        <div class="footer__nav-item footer__nav-item--glossaire">
+            <div class="footer__nav-content">
+                <h2 class="footer__nav-title">Glossaire</h2>
+                <a href="/fr/glossaire.html" class="footer__nav-link" aria-label="Consulter le glossaire">
+                    <img src="/assets/icons/fleche.svg" alt="Voir plus" loading="lazy">
+                </a>
+            </div>
         </div>
-    </div>
 
-    <!-- Mailto -->
-    <div class="footer__nav-item footer__nav-item--mailto">
-        <div class="footer__nav-content">
-            <h2 class="footer__nav-title">Mailto</h2>
-            <a href="mailto:noemie.caritey@edu.univ-fcomte.fr" class="footer__nav-link">
-                <img src="/assets/icons/fleche.svg" alt="Envoyer un email">
-            </a>
+        <!-- Mailto -->
+        <div class="footer__nav-item footer__nav-item--mailto">
+            <div class="footer__nav-content">
+                <h2 class="footer__nav-title">Mailto</h2>
+                <a href="mailto:noemie.caritey@edu.univ-fcomte.fr" class="footer__nav-link" aria-label="Envoyer un email">
+                    <img src="/assets/icons/fleche.svg" alt="Envoyer un email" loading="lazy">
+                </a>
+            </div>
         </div>
-    </div>
 
-    <!-- Informations projet -->
-    <div class="footer__content">
-        <p class="footer__project">« projet réalisé en 2025 dans le cadre d'un exercice pédagogique au département MMi de Montbéliard »</p>
-        <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/" target="_blank" class="footer__link">https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/</a>
-    </div>
+        <!-- Informations projet -->
+        <div class="footer__content">
+            <p class="footer__project">« projet réalisé en 2025 dans le cadre d'un exercice pédagogique au département MMi de Montbéliard »</p>
+            <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/" target="_blank" rel="noopener noreferrer" class="footer__link" aria-label="Visiter le site du département MMi, ouvre dans un nouvel onglet">https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/</a>
+        </div>
 
-    <!-- Crédits -->
-    <div class="footer__credits">
-        <p>Noémie CARITEY A2</p>
-    </div>
-</footer>
+        <!-- Crédits -->
+        <div class="footer__credits">
+            <p>Noémie CARITEY A2</p>
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,71 +1,68 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apollo 11 qui dit Mieux ?</title>
+    <meta name="description" content="Menu de navigation - Apollo 11 qui dit Mieux">
+    <title>Menu - Apollo 11 qui dit Mieux ?</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Actor&family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="../src/css/components/menu.css">
-
-<script src="/src/js/script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Actor&family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/css/components/menu.css">
+    <script src="/src/js/script.js" defer></script>
 </head>
 <body>
-    
+    <!-- Menu principal -->
+    <nav class="menu" aria-label="Menu principal de navigation">
+        <!-- En-tête sur une ligne -->
+        <div class="menu__header">
+            <h1 class="menu__title">Menu</h1>
+            
+            <div class="menu__top-right">
+                <a href="/en/menu.html" class="lang-switcher" aria-label="Changer la langue en anglais" lang="en">ENG</a>
+                <a href="/fr/index.html" class="menu__close" aria-label="Fermer le menu et retourner à l'accueil">
+                    <img src="/assets/icons/croix.svg" alt="Fermer le menu" width="32" height="32">
+                </a>
+            </div>
+        </div>
+        
+        <!-- Liste des liens -->
+        <ul class="menu__list">
+            <li class="menu__item">
+                <a href="/fr/biographie.html" class="menu__link" aria-label="Découvrir la biographie de Katherine Johnson">
+                    La chercheuse
+                    <img src="/assets/icons/fleche.svg" alt="" aria-hidden="true" class="menu__arrow" width="20" height="20" loading="lazy">
+                </a>
+            </li>
+            
+            <li class="menu__item">
+                <a href="/fr/vulgarisation.html" class="menu__link" aria-label="Comprendre la vulgarisation de sa théorie">
+                    Vulgarisation de sa théorie
+                    <img src="/assets/icons/fleche.svg" alt="" aria-hidden="true" class="menu__arrow" width="20" height="20" loading="lazy">
+                </a>
+            </li>
+            
+            <li class="menu__item">
+                <a href="/fr/femmes-sciences.html" class="menu__link" aria-label="Explorer les femmes de sciences dans la littérature">
+                    Femmes de sciences dans la littérature
+                    <img src="/assets/icons/fleche.svg" alt="" aria-hidden="true" class="menu__arrow" width="20" height="20" loading="lazy">
+                </a>
+            </li>
+            
+            <li class="menu__item">
+                <a href="/fr/figures-ombre.html" class="menu__link" aria-label="Découvrir le film Les Figures de l'ombre">
+                    Film
+                    <img src="/assets/icons/fleche.svg" alt="" aria-hidden="true" class="menu__arrow" width="20" height="20" loading="lazy">
+                </a>
+            </li>
+            
+            <li class="menu__item">
+                <a href="/fr/bu.html" class="menu__link" aria-label="Voir l'objet de la bibliothèque universitaire">
+                    Objet de la BU
+                    <img src="/assets/icons/fleche.svg" alt="" aria-hidden="true" class="menu__arrow" width="20" height="20" loading="lazy">
+                </a>
+            </li>
+        </ul>
+    </nav>
 </body>
 </html>
-<!-- Menu principal -->
-<nav class="menu">
-    <!-- En-tête sur une ligne -->
-    <div class="menu__header">
-        <h1 class="menu__title">Menu</h1>
-        
-        <div class="menu__top-right">
-            <a href="/en/menu.html" class="lang-switcher">ENG</a>
-            <a href="/index.html" class="menu__close">
-                <img src="/assets/icons/croix.svg" alt="Fermer le menu">
-            </a>
-        </div>
-    </div>
-    
-    <!-- Liste des liens -->
-    <ul class="menu__list">
-        <li class="menu__item">
-            <a href="/fr/biographie.html" class="menu__link">
-                La chercheuse
-                <img src="/assets/icons/fleche.svg" alt="" class="menu__arrow">
-            </a>
-        </li>
-        
-        <li class="menu__item">
-            <a href="/fr/vulgarisation.html" class="menu__link">
-                Vulgarisation de sa théorie
-                <img src="/assets/icons/fleche.svg" alt="" class="menu__arrow">
-            </a>
-        </li>
-        
-        <li class="menu__item">
-            <a href="/fr/femmes-sciences.html" class="menu__link">
-                Femmes de sciences dans la littérature
-                <img src="/assets/icons/fleche.svg" alt="" class="menu__arrow">
-            </a>
-        </li>
-        
-        <li class="menu__item">
-            <a href="/fr/figures-ombre.html" class="menu__link">
-                Film
-                <img src="/assets/icons/fleche.svg" alt="" class="menu__arrow">
-            </a>
-        </li>
-        
-        <li class="menu__item">
-            <a href="/fr/bu.html" class="menu__link">
-                Objet de la BU
-                <img src="/assets/icons/fleche.svg" alt="" class="menu__arrow">
-            </a>
-        </li>
-    </ul>
-</nav>

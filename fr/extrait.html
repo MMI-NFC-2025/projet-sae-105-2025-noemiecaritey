@@ -3,18 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Extrait du livre Femmes de sciences d'Anna Cabanel sur la contribution des femmes dans la recherche scientifique">
     <title>Extrait du livre Femmes de sciences</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Actor&family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/src/css/style.css">
+    <script src="/src/js/script.js" defer></script>
 </head>
 <body>
     <header class="header">
-        <a href="/index.html" class="header__logo">
+        <a href="/fr/index.html" class="header__logo" aria-label="Retour à l'accueil">
             <img src="/assets/icons/logo.svg" alt="Apollo 11 qui dit Mieux ?">
         </a>
-        <a href="/fr/menu.html" class="header__menu"></a>
-        <img src="/assets/icons/menu.svg" alt="Menu" class="header__menu">
+        <a href="/fr/menu.html" class="header__menu" aria-label="Ouvrir le menu de navigation">
+            <img src="/assets/icons/menu.svg" alt="Menu">
+        </a>
     </header>
-    <a href="/en/book-excerpt.html" class="lang-switcher">ENG</a>
+    
+    <a href="/en/book-excerpt.html" class="lang-switcher" aria-label="Switch to English" lang="en">ENG</a>
     
     <main class="extrait-livre">
         <h1 class="extrait-livre__title">Extrait du livre Femmes de sciences</h1>
@@ -22,69 +29,70 @@
         <section class="extrait-livre__block">
             <div class="extrait-livre__text">
                 <p>« Il est parfois dit que les femmes sont bien qualifiées pour le travail d'administration et d'organisation, mais moins douées que les hommes pour le labeur orignal que requièrent les hautes sphères des mondes universitaire ou scientifique. Il est encore trop tôt pour pouvoir compiler des statistiques fiables pour combattre cette généralisation facile, car la proportion de femmes capables de consacrer leur énergie à la recherche pure fait encore faible et seul l'avenir pourra permettre de mesurer vraiment l'épanouissement de leurs capacités. Il est toutefois possible de souligner que, même au cours de cette période de relatifs débuts où elles ont eu plus d'opportunités, les femmes ont créé des travaux originaux de premier ordre dans de nombreux domaines. En science, par exemple, nous pouvons citer, outre le nom célèbre de Madame Curie, ceux du Dr. Florence Sabin, de la Professeure Ellen Gleditsch, de la Professeure Johanna Westerdijk, de la Professeure Elisabeth Schiemann, du Dr. Harriette Chick, du Dr. G. Elles, – pour en nommer quelques-unes parmi beaucoup qui ont apporté une contribution précieuse au savoir [...]. Des noms de femmes distinguées pour leurs connaissances et leur originalité peuvent être cités dans de nombreux autres domaines – archéologie, anthropologie, histoire, philologie, philosophie, jurisprudence, économie. Dans les recherches de terrain, dans la planification et la supervision de fouilles importantes, des femmes comme Miss G. Caton Thompson, Dr. Hanna Rydh et Dr. Dorothy Garrod ont connu une réussite remarquable, réfutant ainsi d'une manière simple et efficace l'ancien postulat de l'incapacité des femmes à contrôler et organiser des ouvriers masculins.»</p>
-                <img src="/assets/icons/lienexterne.svg" alt="Lien externe">
+                <a href="#" class="extrait-livre__link" aria-label="Voir le lien externe">
+                    <img src="/assets/icons/lienexterne.svg" alt="Lien externe" loading="lazy">
+                </a>
             </div>
         </section>
 
         <nav class="extrait-livre__nav" aria-label="Navigation vers d'autres projets">
-           <a href="/fr/autres-projets.html" class="autres-projets">
-        <img src="/assets/icons/lieninterneautreprojet.svg" alt="frise chronologique">
-    </a>
+            <a href="/fr/autres-projets.html" class="extrait-livre__nav-link" aria-label="Découvrir d'autres projets">
+                <img src="/assets/icons/lieninterneautreprojet.svg" alt="autres projets" loading="lazy">
+            </a>
         </nav>
     </main>
 
-
-<footer class="footer">
-    <!-- À propos -->
-    <div class="footer__nav-item footer__nav-item--about">
-        <div class="footer__nav-content">
-            <h2 class="footer__nav-title">À propos</h2>
-            <a href="/fr/a-propos.html" class="footer__nav-link">
-                <img src="/assets/icons/fleche.svg" alt="Voir plus">
-            </a>
+    <footer class="footer">
+        <!-- À propos -->
+        <div class="footer__nav-item footer__nav-item--about">
+            <div class="footer__nav-content">
+                <h2 class="footer__nav-title">À propos</h2>
+                <a href="/fr/a-propos.html" class="footer__nav-link" aria-label="En savoir plus sur le projet">
+                    <img src="/assets/icons/fleche.svg" alt="Voir plus" loading="lazy">
+                </a>
+            </div>
         </div>
-    </div>
 
-    <!-- Formulaire de contact -->
-    <div class="footer__nav-item footer__nav-item--contact">
-        <div class="footer__nav-content">
-            <h2 class="footer__nav-title">Formulaire de contact</h2>
-            <a href="/fr/contact.html" class="footer__nav-link">
-                <img src="/assets/icons/fleche.svg" alt="Voir plus">
-            </a>
+        <!-- Formulaire de contact -->
+        <div class="footer__nav-item footer__nav-item--contact">
+            <div class="footer__nav-content">
+                <h2 class="footer__nav-title">Formulaire de contact</h2>
+                <a href="/fr/contact.html" class="footer__nav-link" aria-label="Accéder au formulaire de contact">
+                    <img src="/assets/icons/fleche.svg" alt="Voir plus" loading="lazy">
+                </a>
+            </div>
         </div>
-    </div>
 
-    <!-- Glossaire -->
-    <div class="footer__nav-item footer__nav-item--glossaire">
-        <div class="footer__nav-content">
-            <h2 class="footer__nav-title">Glossaire</h2>
-            <a href="/fr/glossaire.html" class="footer__nav-link">
-                <img src="/assets/icons/fleche.svg" alt="Voir plus">
-            </a>
+        <!-- Glossaire -->
+        <div class="footer__nav-item footer__nav-item--glossaire">
+            <div class="footer__nav-content">
+                <h2 class="footer__nav-title">Glossaire</h2>
+                <a href="/fr/glossaire.html" class="footer__nav-link" aria-label="Consulter le glossaire">
+                    <img src="/assets/icons/fleche.svg" alt="Voir plus" loading="lazy">
+                </a>
+            </div>
         </div>
-    </div>
 
-    <!-- Mailto -->
-    <div class="footer__nav-item footer__nav-item--mailto">
-        <div class="footer__nav-content">
-            <h2 class="footer__nav-title">Mailto</h2>
-            <a href="mailto:noemie.caritey@edu.univ-fcomte.fr" class="footer__nav-link">
-                <img src="/assets/icons/fleche.svg" alt="Envoyer un email">
-            </a>
+        <!-- Mailto -->
+        <div class="footer__nav-item footer__nav-item--mailto">
+            <div class="footer__nav-content">
+                <h2 class="footer__nav-title">Mailto</h2>
+                <a href="mailto:noemie.caritey@edu.univ-fcomte.fr" class="footer__nav-link" aria-label="Envoyer un email">
+                    <img src="/assets/icons/fleche.svg" alt="Envoyer un email" loading="lazy">
+                </a>
+            </div>
         </div>
-    </div>
 
-    <!-- Informations projet -->
-    <div class="footer__content">
-        <p class="footer__project">« projet réalisé en 2025 dans le cadre d'un exercice pédagogique au département MMi de Montbéliard »</p>
-        <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/" target="_blank" class="footer__link">https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/</a>
-    </div>
+        <!-- Informations projet -->
+        <div class="footer__content">
+            <p class="footer__project">« projet réalisé en 2025 dans le cadre d'un exercice pédagogique au département MMi de Montbéliard »</p>
+            <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/" target="_blank" rel="noopener noreferrer" class="footer__link" aria-label="Visiter le site du département MMi, ouvre dans un nouvel onglet">https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/</a>
+        </div>
 
-    <!-- Crédits -->
-    <div class="footer__credits">
-        <p>Noémie CARITEY A2</p>
-    </div>
-</footer>
+        <!-- Crédits -->
+        <div class="footer__credits">
+            <p>Noémie CARITEY A2</p>
+        </div>
+    </footer>
 </body>
 </html>

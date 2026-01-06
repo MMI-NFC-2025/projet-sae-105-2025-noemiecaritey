@@ -3,23 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Les figures de l'ombres dévoilées aux grand jour</title>
+    <meta name="description" content="Le film Les Figures de l'ombre qui met en lumière Katherine Johnson, Dorothy Vaughan et Mary Jackson, mathématiciennes de la NASA">
+    <title>Les figures de l'ombre dévoilées au grand jour</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Actor&family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/src/css/style.css">
+    <script src="/src/js/script.js" defer></script>
 </head>
 <body>
     <header class="header">
-        <a href="/index.html" class="header__logo">
+        <a href="/fr/index.html" class="header__logo" aria-label="Retour à l'accueil">
             <img src="/assets/icons/logo.svg" alt="Apollo 11 qui dit Mieux ?">
         </a>
-        <a href="/fr/menu.html" class="header__menu"></a>
-        <img src="/assets/icons/menu.svg" alt="Menu" class="header__menu">
+        <a href="/fr/menu.html" class="header__menu" aria-label="Ouvrir le menu de navigation">
+            <img src="/assets/icons/menu.svg" alt="Menu">
+        </a>
     </header>
-    <a href="/en/hidden-figures.html" class="lang-switcher">ENG</a>
+    
+    <a href="/en/hidden-figures.html" class="lang-switcher" aria-label="Switch to English" lang="en">ENG</a>
+    
     <main class="figures-ombre">
         <section class="figures-ombre__hero">
-            <img src="/assets/img/figures_ombre_1.avif" alt="illustration Terre de la Lune" class="figures-ombre__hero-img">
+            <img src="/assets/img/figures_ombre_1.avif" alt="Illustration de la Terre vue depuis la Lune" class="figures-ombre__hero-img">
         </section>
+        
         <h1 class="figures-ombre__title">Les Figures de l'ombre dévoilées au grand jour</h1>
+        
         <section class="figures-ombre__block">
             <div class="figures-ombre__text">
                 <p>Longtemps, l'histoire des sciences a privilégié <span class="figures-ombre__highlight">les récits masculins</span>, laissant dans l'ombre des femmes pourtant essentielles aux grandes avancées.</p>
@@ -27,7 +37,7 @@
                 <p>Le film <span class="figures-ombre__highlight">Les Figures de l'ombre</span> (Theodore Melfi, 2016), adapté du livre de Margot Lee Shetterly, en est un exemple emblématique.</p>
             </div>
             <div class="figures-ombre__img-wrap">
-                <img src="/assets/img/figure_ombre_2.avif" alt="Groupe de mathématiciennes à la NASA" class="figures-ombre__img">
+                <img src="/assets/img/figure_ombre_2.avif" alt="Groupe de mathématiciennes à la NASA" class="figures-ombre__img" loading="lazy">
             </div>
         </section>
 
@@ -41,8 +51,8 @@
                     <li><span class="figures-ombre__highlight">Mary Jackson</span> est devenue la première ingénieure afro-américaine de la NASA.</li>
                 </ul>
                 <p>Le film met en lumière non seulement leur génie scientifique, mais aussi <span class="figures-ombre__highlight">leur combat contre le sexisme</span> et <span class="figures-ombre__highlight">la ségrégation raciale</span>.</p>
-                <a href="#" class="biographie__link">
-                <img src="/assets/icons/lienexterne.svg" alt="Lien externe">
+                <a href="#" class="biographie__link" aria-label="Voir le lien externe">
+                    <img src="/assets/icons/lienexterne.svg" alt="Lien externe" loading="lazy">
                 </a>
             </div>
         </section>
@@ -55,7 +65,6 @@
                 <p>- Il <span class="figures-ombre__highlight">corrige</span> l'oubli historique en leur rendant une place dans l'imaginaire collectif.</p>
                 <p>- Il <span class="figures-ombre__highlight">participe</span> à une réécriture de l'histoire qui inclut enfin les femmes et les minorités.</p>
             </div>
-            </div>
         </section>
 
         <section class="figures-ombre__block figures-ombre__block--reverse">
@@ -66,74 +75,77 @@
                 <p>- Il <span class="figures-ombre__highlight">déconstruit les stéréotypes</span> de genre liés aux mathématiques et à la recherche.</p>
                 <p>- Il rappelle que le progrès scientifique est le fruit d'un <span class="figures-ombre__highlight">travail collectif et diversifié</span>, souvent occulté par les récits officiels.</p>
             </div>
-            <a href="#" class="biographie__link">
-                <img src="/assets/icons/lienexterne.svg" alt="Lien externe">
-                </a>
+            <a href="#" class="biographie__link" aria-label="Voir le lien externe">
+                <img src="/assets/icons/lienexterne.svg" alt="Lien externe" loading="lazy">
+            </a>
         </section>
 
         <nav class="figures-ombre__nav" aria-label="Navigation vers contenus liés">
             <div class="biographie__internal-links">
-    <a href="/fr/bandeannonce.html" class="biographie__internal-link">
-        <img src="/assets/icons/lieninternebandeannonce.svg" alt="bande annonce">
-    </a> 
-    <a href="/fr/femmes-sciences.html" class="biographie__internal-link">
-        <img src="/assets/icons/lieninternefemmesdesciences.svg" alt="femmes sciences">
-    </a>
-</div>
+                <a href="/fr/bandeannonce.html" class="biographie__internal-link" aria-label="Voir la bande annonce">
+                    <img src="/assets/icons/lieninternebandeannonce.svg" alt="bande annonce" loading="lazy">
+                </a> 
+                <a href="/fr/femmes-sciences.html" class="biographie__internal-link" aria-label="Découvrir les femmes de sciences dans la littérature">
+                    <img src="/assets/icons/lieninternefemmesdesciences.svg" alt="femmes sciences" loading="lazy">
+                </a>
+                <a href="/fr/galerie.html" class="biographie__internal-link" aria-label="Découvrir la galerie films">
+                    <img src="/assets/icons/lieninternegalerie.svg" alt="galerie films" loading="lazy">
+                </a>
+            </div>
         </nav>
     </main>
 
- <footer class="footer">
-    <!-- À propos -->
-    <div class="footer__nav-item footer__nav-item--about">
-        <div class="footer__nav-content">
-            <h2 class="footer__nav-title">À propos</h2>
-            <a href="/fr/a-propos.html" class="footer__nav-link">
-                <img src="/assets/icons/fleche.svg" alt="Voir plus">
-            </a>
+    <footer class="footer">
+        <!-- À propos -->
+        <div class="footer__nav-item footer__nav-item--about">
+            <div class="footer__nav-content">
+                <h2 class="footer__nav-title">À propos</h2>
+                <a href="/fr/a-propos.html" class="footer__nav-link" aria-label="En savoir plus sur le projet">
+                    <img src="/assets/icons/fleche.svg" alt="Voir plus" loading="lazy">
+                </a>
+            </div>
         </div>
-    </div>
 
-    <!-- Formulaire de contact -->
-    <div class="footer__nav-item footer__nav-item--contact">
-        <div class="footer__nav-content">
-            <h2 class="footer__nav-title">Formulaire de contact</h2>
-            <a href="/fr/contact.html" class="footer__nav-link">
-                <img src="/assets/icons/fleche.svg" alt="Voir plus">
-            </a>
+        <!-- Formulaire de contact -->
+        <div class="footer__nav-item footer__nav-item--contact">
+            <div class="footer__nav-content">
+                <h2 class="footer__nav-title">Formulaire de contact</h2>
+                <a href="/fr/contact.html" class="footer__nav-link" aria-label="Accéder au formulaire de contact">
+                    <img src="/assets/icons/fleche.svg" alt="Voir plus" loading="lazy">
+                </a>
+            </div>
         </div>
-    </div>
 
-    <!-- Glossaire -->
-    <div class="footer__nav-item footer__nav-item--glossaire">
-        <div class="footer__nav-content">
-            <h2 class="footer__nav-title">Glossaire</h2>
-            <a href="/fr/glossaire.html" class="footer__nav-link">
-                <img src="/assets/icons/fleche.svg" alt="Voir plus">
-            </a>
+        <!-- Glossaire -->
+        <div class="footer__nav-item footer__nav-item--glossaire">
+            <div class="footer__nav-content">
+                <h2 class="footer__nav-title">Glossaire</h2>
+                <a href="/fr/glossaire.html" class="footer__nav-link" aria-label="Consulter le glossaire">
+                    <img src="/assets/icons/fleche.svg" alt="Voir plus" loading="lazy">
+                </a>
+            </div>
         </div>
-    </div>
 
-    <!-- Mailto -->
-    <div class="footer__nav-item footer__nav-item--mailto">
-        <div class="footer__nav-content">
-            <h2 class="footer__nav-title">Mailto</h2>
-            <a href="mailto:noemie.caritey@edu.univ-fcomte.fr" class="footer__nav-link">
-                <img src="/assets/icons/fleche.svg" alt="Envoyer un email">
-            </a>
+        <!-- Mailto -->
+        <div class="footer__nav-item footer__nav-item--mailto">
+            <div class="footer__nav-content">
+                <h2 class="footer__nav-title">Mailto</h2>
+                <a href="mailto:noemie.caritey@edu.univ-fcomte.fr" class="footer__nav-link" aria-label="Envoyer un email">
+                    <img src="/assets/icons/fleche.svg" alt="Envoyer un email" loading="lazy">
+                </a>
+            </div>
         </div>
-    </div>
 
-    <!-- Informations projet -->
-    <div class="footer__content">
-        <p class="footer__project">« projet réalisé en 2025 dans le cadre d'un exercice pédagogique au département MMi de Montbéliard »</p>
-        <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/" target="_blank" class="footer__link">https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/</a>
-    </div>
+        <!-- Informations projet -->
+        <div class="footer__content">
+            <p class="footer__project">« projet réalisé en 2025 dans le cadre d'un exercice pédagogique au département MMi de Montbéliard »</p>
+            <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/" target="_blank" rel="noopener noreferrer" class="footer__link" aria-label="Visiter le site du département MMi, ouvre dans un nouvel onglet">https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/</a>
+        </div>
 
-    <!-- Crédits -->
-    <div class="footer__credits">
-        <p>Noémie CARITEY A2</p>
-    </div>
-</footer>
+        <!-- Crédits -->
+        <div class="footer__credits">
+            <p>Noémie CARITEY A2</p>
+        </div>
+    </footer>
 </body>
 </html>

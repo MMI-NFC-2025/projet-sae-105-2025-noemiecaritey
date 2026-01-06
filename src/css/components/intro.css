@@ -9,12 +9,14 @@
   font-size: var(--font-s);
   line-height: 1.6;
   margin-bottom: 20px;
+  margin-left: 15px;
   text-align: left;
   color: var(--color-text);
 }
 
 .intro__text:last-child {
   margin-bottom: 0;
+  margin-left: 15px;
 }
 
 .intro__highlight {

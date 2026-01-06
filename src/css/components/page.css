@@ -517,3 +517,587 @@
   margin-bottom: 20px;
 }
 
+/* ===================================
+   FEMMES SCIENCES PAGE
+   =================================== */
+
+.femmes-sciences {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Cairo', sans-serif;
+    background-color: #FFF;
+}
+
+/* Hero Section avec les portraits */
+.femmes-sciences__hero {
+    width: 100%;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.femmes-sciences__hero-img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Title principal en orange */
+.femmes-sciences__title {
+    font-family: 'Cairo', sans-serif;
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 400;
+    color: #E77C3F; /* Orange comme dans l'image */
+    line-height: 1.1;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+    max-width: 900px;
+    text-align: left;
+}
+
+/* Content Blocks - une seule colonne sur mobile */
+.femmes-sciences__block {
+    max-width: 900px;
+    margin: 0 auto 3rem;
+    padding: 0 1.5rem;
+}
+
+.femmes-sciences__block--reverse {
+    max-width: 900px;
+    margin: 0 auto 3rem;
+    padding: 0 1.5rem;
+}
+
+/* Text Content */
+.femmes-sciences__text {
+    margin-bottom: 2rem;
+}
+
+/* Sous-titres en bleu-gris */
+.femmes-sciences__subtitle {
+    font-family: 'Cairo', sans-serif;
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    font-weight: 400;
+    color: #99A8C6; /* Bleu-gris comme dans l'image */
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+/* Paragraphes */
+.femmes-sciences__text p {
+    font-family: 'Cairo', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #000;
+    margin-bottom: 1rem;
+}
+
+/* Highlights roses */
+.femmes-sciences__highlight {
+    color: #E89FB7; /* Rose comme dans l'image */
+    font-weight: 400;
+}
+
+/* Listes à puces roses */
+.femmes-sciences__text ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 1.5rem 0;
+}
+
+.femmes-sciences__text li {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #000;
+}
+
+.femmes-sciences__text li::before {
+    content: "■";
+    position: absolute;
+    left: 0.5rem;
+    color: #E89FB7; /* Rose */
+    font-size: 0.8rem;
+}
+
+/* Highlight dans les listes en rose plus clair */
+.femmes-sciences__text li .femmes-sciences__highlight {
+    color: #E89FB7;
+    font-weight: 400;
+}
+
+/* Images */
+.femmes-sciences__img-wrap {
+    width: 100%;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.femmes-sciences__img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Lien externe en rouge/orange */
+.femmes-sciences__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #E77C3F;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.femmes-sciences__link::before {
+    content: "↗";
+    font-size: 1.2rem;
+}
+
+.femmes-sciences__link:hover {
+    text-decoration: underline;
+}
+
+/* Navigation buttons en bas */
+.femmes-sciences__nav {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.femmes-sciences__nav-btn {
+    width: 100%;
+    padding: 1.25rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: 'Cairo', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s ease;
+}
+
+.femmes-sciences__nav-btn--yellow {
+    background-color: #F5C842;
+    color: #000;
+}
+
+.femmes-sciences__nav-btn--purple {
+    background-color: #C8A6D4;
+    color: #000;
+}
+
+.femmes-sciences__nav-btn:hover {
+    transform: translateX(5px);
+}
+
+.femmes-sciences__nav-btn span {
+    font-size: 1.5rem;
+}
+
+/* ===================================
+   OBJET BU PAGE (Femmes de sciences)
+   =================================== */
+
+.objet-bu {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Cairo', sans-serif;
+    background-color: #FFF;
+}
+
+/* Hero Section avec illustrations de visages */
+.objet-bu__hero {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.objet-bu__hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Titre principal en orange */
+.objet-bu__title {
+    font-family: 'Cairo', sans-serif;
+    font-size: clamp(1.75rem, 4.5vw, 2.75rem);
+    font-weight: 400;
+    color: #E77C3F; /* Orange */
+    line-height: 1.15;
+    margin: 1.5rem auto 2.5rem;
+    padding: 0 1.5rem;
+    max-width: 1200px;
+    text-align: left;
+}
+
+/* Content Blocks */
+.objet-bu__block {
+    max-width: 1200px;
+    margin: 0 auto 3rem;
+    padding: 0 1.5rem;
+}
+
+.objet-bu__block--reverse {
+    max-width: 1200px;
+    margin: 0 auto 3rem;
+    padding: 0 1.5rem;
+}
+
+/* Text Content */
+.objet-bu__text {
+    margin-bottom: 1.5rem;
+}
+
+.objet-bu__text p {
+    font-family: 'Cairo', sans-serif;
+    font-size: 1rem;
+    line-height: 1.65;
+    color: #000;
+    margin-bottom: 1rem;
+}
+
+/* Question en rose */
+.objet-bu__question {
+    color: #E89FB7 !important; /* Rose */
+    font-weight: 400;
+}
+
+/* Sous-titres en bleu-gris */
+.objet-bu__subtitle {
+    font-family: 'Cairo', sans-serif;
+    font-size: clamp(1.5rem, 3.5vw, 2rem);
+    font-weight: 400;
+    color: #99A8C6; /* Bleu-gris */
+    margin-bottom: 1rem;
+    line-height: 1.25;
+}
+
+/* Highlights en rose */
+.objet-bu__highlight {
+    color: #E89FB7; /* Rose */
+    font-weight: 400;
+}
+
+/* Listes à puces */
+.objet-bu__text ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 1rem 0;
+}
+
+.objet-bu__text li {
+    position: relative;
+    padding-left: 0;
+    margin-bottom: 0.5rem;
+    line-height: 1.65;
+    font-size: 1rem;
+    color: #000;
+}
+
+/* Images à 100% */
+.objet-bu__img-wrap {
+    width: 100%;
+}
+
+.objet-bu__img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Lien externe (icône) - TAILLE NORMALE */
+.biographie__link {
+    display: inline-block;
+    margin-top: 1.5rem;
+}
+
+.biographie__link img {
+    width: auto;
+    height: 28px;
+    display: block;
+}
+
+
+/* Navigation avec icônes en colonne */
+.objet-bu__nav {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.objet-bu__nav-link {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+}
+
+.objet-bu__nav-link img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.2s ease;
+}
+
+.objet-bu__nav-link:hover img {
+    transform: scale(1.02);
+}
+
+
+  /* ===================================
+   EXTRAIT LIVRE PAGE
+   =================================== */
+
+.extrait-livre {
+    max-width: 100%;
+    margin: 0;
+    padding: 2rem 1.5rem;
+    font-family: 'Cairo', sans-serif;
+    background-color: #FFF;
+}
+
+/* Titre en bleu clair */
+.extrait-livre__title {
+    font-family: 'Cairo', sans-serif;
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 400;
+    color: #A8D5E2; /* Bleu clair comme dans l'image */
+    line-height: 1.15;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+/* Content Block */
+.extrait-livre__block {
+    max-width: 900px;
+    margin: 0 auto 3rem;
+}
+
+/* Text Content - Extrait en bloc */
+.extrait-livre__text {
+    margin-bottom: 2rem;
+}
+
+.extrait-livre__text p {
+    font-family: 'Cairo', sans-serif;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #000;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+/* Lien externe sous l'extrait */
+.extrait-livre__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.extrait-livre__link img {
+    width: auto;
+    height: 24px;
+    display: block;
+}
+
+.extrait-livre__link:hover {
+    text-decoration: underline;
+}
+
+.extrait-livre__nav-link img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ===================================
+   AUTRES PROJETS PAGE
+   =================================== */
+
+.autres-projets {
+    max-width: 100%;
+    margin: 0;
+    padding: 2rem 1.5rem;
+    font-family: 'Cairo', sans-serif;
+    background-color: #FFF;
+}
+
+/* Titre en rouge */
+.autres-projets__title {
+    font-family: 'Actor', sans-serif;
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 700;
+    color: #D64545; /* Rouge */
+    line-height: 1.2;
+    margin-bottom: 2.5rem;
+    text-align: left;
+}
+
+/* Liste des projets */
+.autres-projets__list {
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px; /* Changé de 1.5rem à 20px */
+}
+
+.autres-projets__item {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border-radius: 25px;
+    text-decoration: none;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.autres-projets__item:last-child {
+    margin-bottom: 0;
+}
+
+.autres-projets__item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ===================================
+   À PROPOS PAGE
+   =================================== */
+
+.a-propos {
+    max-width: 100%;
+    margin: 0;
+    padding: 2rem 1.5rem;
+    font-family: 'Cairo', sans-serif;
+    background-color: #FFF;
+}
+
+/* Titre principal en bleu-gris */
+.a-propos__title {
+    font-family: 'Cairo', sans-serif;
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 400;
+    color: #99A8C6; /* Bleu-gris */
+    line-height: 1.1;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+/* Content Blocks */
+.a-propos__block {
+    max-width: 900px;
+    margin: 0 auto 3rem;
+}
+
+/* Image avec label "Moi" */
+.a-propos__img-wrap {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 2rem;
+}
+
+.a-propos__img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 50%;
+}
+
+.a-propos__label {
+    position: absolute;
+    bottom: 10%;
+    left: -10%;
+    font-family: 'Cairo', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #4A5F7F; /* Bleu foncé */
+    background-color: transparent;
+}
+
+/* Text Content */
+.a-propos__text {
+    margin-bottom: 2rem;
+}
+
+.a-propos__text p {
+    font-family: 'Cairo', sans-serif;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #000;
+    margin-bottom: 1.25rem;
+}
+
+/* Sous-titre "Le projet" en bleu-gris */
+.a-propos__subtitle {
+    font-family: 'Cairo', sans-serif;
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 600;
+    color: #99A8C6; /* Bleu-gris */
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+/* Highlights en orange */
+.a-propos__highlight {
+    color: #E77C3F; /* Orange */
+    font-weight: 400;
+}
+
+/* Navigation bottom - Bouton turquoise */
+.a-propos__nav {
+    max-width: 900px;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: center;
+}
+
+.a-propos__nav-btn {
+    display: inline-block;
+    padding: 1.5rem 2.5rem;
+    background: linear-gradient(135deg, #7DD3C0 0%, #A8D5E2 100%);
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: 'Cairo', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #D64545; /* Rouge */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.a-propos__nav-btn span {
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.a-propos__nav-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+

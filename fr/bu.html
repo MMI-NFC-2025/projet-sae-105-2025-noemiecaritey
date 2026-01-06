@@ -3,18 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez le livre Femmes de sciences d'Anna Cabanel qui redonne leur place aux scientifiques oubliées de l'histoire">
     <title>Femmes de sciences d'Anna Cabanel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Actor&family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/src/css/style.css">
+    <script src="/src/js/script.js" defer></script>
 </head>
 <body>
     <header class="header">
-        <a href="/index.html" class="header__logo">
+        <a href="/fr/index.html" class="header__logo" aria-label="Retour à l'accueil">
             <img src="/assets/icons/logo.svg" alt="Apollo 11 qui dit Mieux ?">
         </a>
-        <a href="/fr/menu.html" class="header__menu"></a>
-        <img src="/assets/icons/menu.svg" alt="Menu" class="header__menu">
+        <a href="/fr/menu.html" class="header__menu" aria-label="Ouvrir le menu de navigation">
+            <img src="/assets/icons/menu.svg" alt="Menu">
+        </a>
     </header>
-    <a href="/en/bu.html" class="lang-switcher">ENG</a>
+    
+    <a href="/en/bu.html" class="lang-switcher" aria-label="Switch to English" lang="en">ENG</a>
     
     <main class="objet-bu">
         <section class="objet-bu__hero">
@@ -35,12 +42,11 @@
             <div class="objet-bu__text">
                 <h2 class="objet-bu__subtitle">Un ouvrage de mémoire et de transmission</h2>
                 <p>Publié chez <span class="objet-bu__highlight">le grand public</span>, Femmes de sciences n'est pas un manuel académique réservé aux spécialistes. C'est un livre <span class="objet-bu__highlight">vivant, accessible</span>, qui présente les portraits de chercheuses, mathématiciennes, biologistes, informaticiennes à travers les siècles.</p>
-                <p>On y croise des figures célèbres, comme <span class="objet-bu__highlight">Marie Curie</span> ou <span class="objet-bu__highlight">Ada Lovelace</span>, mais aussi des scientifiques moins connues, telles que <span class="objet-bu__highlight">Rosalind Franklin</span>, pionnière de la découverte de l'ADN, ou encore des ingénieures et mathématiciennes du XXᵉ siècle restées dans l'ombre.</p>
+                <p>On y croise des figures célèbres, comme <span class="objet-bu__highlight">Marie Curie</span> ou <span class="objet-bu__highlight">Ada Lovelace</span>, mais aussi des scientifiques moins connues, telles que <span class="objet-bu__highlight">Rosalind Franklin</span>, pionnière de la découverte de l'ADN, ou encore des ingénieures et mathématiciennes du XX<sup>e</sup> siècle restées dans l'ombre.</p>
                 <p>Chaque chapitre raconte <span class="objet-bu__highlight">leur parcours, les obstacles</span> rencontrés, mais aussi <span class="objet-bu__highlight">leur passion</span> et <span class="objet-bu__highlight">leur persévérance</span>.</p>
-                <a href="#" class="objet-bu__link">Lien</a>
-            </div>
-            <div class="objet-bu__img-wrap">
-                <img src="/assets/img/bu_2.avif" alt="Portraits de femmes scientifiques" class="objet-bu__img">
+                <a href="#" class="biographie__link" aria-label="Voir le lien externe">
+                    <img src="/assets/icons/lienexterne.svg" alt="Lien externe" loading="lazy">
+                </a>
             </div>
         </section>
 
@@ -56,9 +62,7 @@
             <div class="objet-bu__text">
                 <h2 class="objet-bu__subtitle">Un outil de réhabilitation, à l'image du cinéma</h2>
                 <p>Comme le film Les Figures de l'ombre qui a révélé au grand public l'importance des mathématiciennes afro-américaines de la NASA, le livre Femmes de sciences s'inscrit dans <span class="objet-bu__highlight">un mouvement de réhabilitation</span>. Il ne s'agit pas seulement de <span class="objet-bu__highlight">rendre hommage</span>, mais de <span class="objet-bu__highlight">réécrire une histoire plus juste</span>, où les femmes retrouvent <span class="objet-bu__highlight">leur place</span> dans le récit scientifique.</p>
-            </div>
-            <div class="objet-bu__img-wrap">
-                <img src="/assets/img/bu_3.avif" alt="Femme faisant une présentation scientifique" class="objet-bu__img">
+                <img src="/assets/img/bu_3.avif" alt="Simone Vei" class="objet-bu__img" loading="lazy">
             </div>
         </section>
 
@@ -72,71 +76,73 @@
                     <li>et une <span class="objet-bu__highlight">démarche engagée</span> pour <span class="objet-bu__highlight">l'égalité</span> et <span class="objet-bu__highlight">la mémoire</span>.</li>
                 </ul>
                 <p>Avec une écriture claire et passionnée, Anna Cabanel réussit à transformer la lecture en un voyage inspirant, qui rappelle que la science s'est construite grâce à des hommes... mais aussi <span class="objet-bu__highlight">grâce à des femmes</span>.</p>
-                <a href="#" class="objet-bu__link">Lien</a>
+                <a href="#" class="biographie__link" aria-label="Voir le lien externe">
+                    <img src="/assets/icons/lienexterne.svg" alt="Lien externe" loading="lazy">
+                </a>
             </div>
         </section>
 
         <nav class="objet-bu__nav" aria-label="Navigation vers contenus liés">
-            <a href="/fr/extrait.html" class="extrait">
-                <img src="/assets/icons/lieninterneextrait.svg" alt="extrait livre">
+            <a href="/fr/extrait.html" class="objet-bu__nav-link" aria-label="Lire un extrait du livre">
+                <img src="/assets/icons/lieninterneextrait.svg" alt="extrait livre" loading="lazy">
             </a>
-            <a href="/fr/autres-projets.html" class="extrait">
-                <img src="/assets/icons/lieninterneautreprojet.svg" alt="autres projets">
+            <a href="/fr/autres-projets.html" class="objet-bu__nav-link" aria-label="Découvrir d'autres projets">
+                <img src="/assets/icons/lieninterneautreprojet.svg" alt="autres projets" loading="lazy">
             </a>
         </nav>
     </main>
 
- <footer class="footer">
-    <!-- À propos -->
-    <div class="footer__nav-item footer__nav-item--about">
-        <div class="footer__nav-content">
-            <h2 class="footer__nav-title">À propos</h2>
-            <a href="/fr/a-propos.html" class="footer__nav-link">
-                <img src="/assets/icons/fleche.svg" alt="Voir plus">
-            </a>
+    <footer class="footer">
+        <!-- À propos -->
+        <div class="footer__nav-item footer__nav-item--about">
+            <div class="footer__nav-content">
+                <h2 class="footer__nav-title">À propos</h2>
+                <a href="/fr/a-propos.html" class="footer__nav-link" aria-label="En savoir plus sur le projet">
+                    <img src="/assets/icons/fleche.svg" alt="Voir plus" loading="lazy">
+                </a>
+            </div>
         </div>
-    </div>
 
-    <!-- Formulaire de contact -->
-    <div class="footer__nav-item footer__nav-item--contact">
-        <div class="footer__nav-content">
-            <h2 class="footer__nav-title">Formulaire de contact</h2>
-            <a href="/fr/contact.html" class="footer__nav-link">
-                <img src="/assets/icons/fleche.svg" alt="Voir plus">
-            </a>
+        <!-- Formulaire de contact -->
+        <div class="footer__nav-item footer__nav-item--contact">
+            <div class="footer__nav-content">
+                <h2 class="footer__nav-title">Formulaire de contact</h2>
+                <a href="/fr/contact.html" class="footer__nav-link" aria-label="Accéder au formulaire de contact">
+                    <img src="/assets/icons/fleche.svg" alt="Voir plus" loading="lazy">
+                </a>
+            </div>
         </div>
-    </div>
 
-    <!-- Glossaire -->
-    <div class="footer__nav-item footer__nav-item--glossaire">
-        <div class="footer__nav-content">
-            <h2 class="footer__nav-title">Glossaire</h2>
-            <a href="/fr/glossaire.html" class="footer__nav-link">
-                <img src="/assets/icons/fleche.svg" alt="Voir plus">
-            </a>
+        <!-- Glossaire -->
+        <div class="footer__nav-item footer__nav-item--glossaire">
+            <div class="footer__nav-content">
+                <h2 class="footer__nav-title">Glossaire</h2>
+                <a href="/fr/glossaire.html" class="footer__nav-link" aria-label="Consulter le glossaire">
+                    <img src="/assets/icons/fleche.svg" alt="Voir plus" loading="lazy">
+                </a>
+            </div>
         </div>
-    </div>
 
-    <!-- Mailto -->
-    <div class="footer__nav-item footer__nav-item--mailto">
-        <div class="footer__nav-content">
-            <h2 class="footer__nav-title">Mailto</h2>
-            <a href="mailto:noemie.caritey@edu.univ-fcomte.fr" class="footer__nav-link">
-                <img src="/assets/icons/fleche.svg" alt="Envoyer un email">
-            </a>
+        <!-- Mailto -->
+        <div class="footer__nav-item footer__nav-item--mailto">
+            <div class="footer__nav-content">
+                <h2 class="footer__nav-title">Mailto</h2>
+                <a href="mailto:noemie.caritey@edu.univ-fcomte.fr" class="footer__nav-link" aria-label="Envoyer un email">
+                    <img src="/assets/icons/fleche.svg" alt="Envoyer un email" loading="lazy">
+                </a>
+            </div>
         </div>
-    </div>
 
-    <!-- Informations projet -->
-    <div class="footer__content">
-        <p class="footer__project">« projet réalisé en 2025 dans le cadre d'un exercice pédagogique au département MMi de Montbéliard »</p>
-        <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/" target="_blank" class="footer__link">https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/</a>
-    </div>
+        <!-- Informations projet -->
+        <div class="footer__content">
+            <p class="footer__project">« projet réalisé en 2025 dans le cadre d'un exercice pédagogique au département MMi de Montbéliard »</p>
+            <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/" target="_blank" rel="noopener noreferrer" class="footer__link" aria-label="Visiter le site du département MMi, ouvre dans un nouvel onglet">https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/</a>
+        </div>
 
-    <!-- Crédits -->
-    <div class="footer__credits">
-        <p>Noémie CARITEY A2</p>
-    </div>
-</footer>
+        <!-- Crédits -->
+        <div class="footer__credits">
+            <p>Noémie CARITEY A2</p>
+        </div>
+    </footer>
 </body>
 </html>

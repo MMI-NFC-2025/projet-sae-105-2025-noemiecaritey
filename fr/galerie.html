@@ -3,18 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Galerie de films et séries en lien avec les femmes scientifiques : Hidden Figures, Lessons in chemistry et plus">
     <title>Galerie de films et série en liens</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Actor&family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/src/css/style.css">
+    <script src="/src/js/script.js" defer></script>
 </head>
 <body>
     <header class="header">
-        <a href="/index.html" class="header__logo">
+        <a href="/fr/index.html" class="header__logo" aria-label="Retour à l'accueil">
             <img src="/assets/icons/logo.svg" alt="Apollo 11 qui dit Mieux ?">
         </a>
-        <a href="/fr/menu.html" class="header__menu"></a>
-        <img src="/assets/icons/menu.svg" alt="Menu" class="header__menu">
+        <a href="/fr/menu.html" class="header__menu" aria-label="Ouvrir le menu de navigation">
+            <img src="/assets/icons/menu.svg" alt="Menu">
+        </a>
     </header>
-    <a href="/en/gallery.html" class="lang-switcher">ENG</a>
+    
+    <a href="/en/gallery.html" class="lang-switcher" aria-label="Switch to English" lang="en">ENG</a>
     
     <main class="galerie">
         <h1 class="galerie__title">Galerie de films et série en liens</h1>
@@ -23,7 +30,7 @@
             <!-- Hidden Figures -->
             <article class="galerie__item">
                 <div class="galerie__img-wrap">
-                    <img src="/assets/img/galerie1.avif" alt="Affiche du film Hidden Figures" class="galerie__img">
+                    <img src="/assets/img/galerie1.avif" alt="Affiche du film Hidden Figures" class="galerie__img" loading="lazy">
                 </div>
                 <h2 class="galerie__film-title">Hidden Figures</h2>
             </article>
@@ -31,7 +38,7 @@
             <!-- Lessons in chemistry -->
             <article class="galerie__item">
                 <div class="galerie__img-wrap">
-                    <img src="/assets/img/galerie2.avif" alt="Affiche de la série Lessons in chemistry" class="galerie__img">
+                    <img src="/assets/img/galerie2.avif" alt="Affiche de la série Lessons in chemistry" class="galerie__img" loading="lazy">
                 </div>
                 <h2 class="galerie__film-title">Lessons in chemistry</h2>
             </article>
@@ -39,7 +46,7 @@
             <!-- Mary Shelley -->
             <article class="galerie__item">
                 <div class="galerie__img-wrap">
-                    <img src="/assets/img/galerie3.avif" alt="Affiche du film Mary Shelley" class="galerie__img">
+                    <img src="/assets/img/galerie3.avif" alt="Affiche du film Mary Shelley" class="galerie__img" loading="lazy">
                 </div>
                 <h2 class="galerie__film-title">Mary Shelley</h2>
             </article>
@@ -47,7 +54,7 @@
             <!-- On the basics of sex -->
             <article class="galerie__item">
                 <div class="galerie__img-wrap">
-                    <img src="/assets/img/galerie4.avif" alt="Affiche du film On the basics of sex" class="galerie__img">
+                    <img src="/assets/img/galerie4.avif" alt="Affiche du film On the basics of sex" class="galerie__img" loading="lazy">
                 </div>
                 <h2 class="galerie__film-title">On the basics of sex</h2>
             </article>
@@ -55,7 +62,7 @@
             <!-- La rebelle -->
             <article class="galerie__item">
                 <div class="galerie__img-wrap">
-                    <img src="/assets/img/galerie5.avif" alt="Affiche du film La rebelle" class="galerie__img">
+                    <img src="/assets/img/galerie5.avif" alt="Affiche du film La rebelle" class="galerie__img" loading="lazy">
                 </div>
                 <h2 class="galerie__film-title">La rebelle</h2>
             </article>
@@ -63,7 +70,7 @@
             <!-- Picture a scientist -->
             <article class="galerie__item">
                 <div class="galerie__img-wrap">
-                    <img src="/assets/img/galerie6.avif" alt="Affiche du documentaire Picture a scientist" class="galerie__img">
+                    <img src="/assets/img/galerie6.avif" alt="Affiche du documentaire Picture a scientist" class="galerie__img" loading="lazy">
                 </div>
                 <h2 class="galerie__film-title">Picture a scientist</h2>
             </article>
@@ -71,64 +78,64 @@
             <!-- Conceiving Ada -->
             <article class="galerie__item">
                 <div class="galerie__img-wrap">
-                    <img src="/assets/img/galerie7.avif" alt="Affiche du film Conceiving Ada" class="galerie__img">
+                    <img src="/assets/img/galerie7.avif" alt="Affiche du film Conceiving Ada" class="galerie__img" loading="lazy">
                 </div>
                 <h2 class="galerie__film-title">Conceiving Ada</h2>
             </article>
         </section>
     </main>
 
-  <footer class="footer">
-    <!-- À propos -->
-    <div class="footer__nav-item footer__nav-item--about">
-        <div class="footer__nav-content">
-            <h2 class="footer__nav-title">À propos</h2>
-            <a href="/fr/a-propos.html" class="footer__nav-link">
-                <img src="/assets/icons/fleche.svg" alt="Voir plus">
-            </a>
+    <footer class="footer">
+        <!-- À propos -->
+        <div class="footer__nav-item footer__nav-item--about">
+            <div class="footer__nav-content">
+                <h2 class="footer__nav-title">À propos</h2>
+                <a href="/fr/a-propos.html" class="footer__nav-link" aria-label="En savoir plus sur le projet">
+                    <img src="/assets/icons/fleche.svg" alt="Voir plus" loading="lazy">
+                </a>
+            </div>
         </div>
-    </div>
 
-    <!-- Formulaire de contact -->
-    <div class="footer__nav-item footer__nav-item--contact">
-        <div class="footer__nav-content">
-            <h2 class="footer__nav-title">Formulaire de contact</h2>
-            <a href="/fr/contact.html" class="footer__nav-link">
-                <img src="/assets/icons/fleche.svg" alt="Voir plus">
-            </a>
+        <!-- Formulaire de contact -->
+        <div class="footer__nav-item footer__nav-item--contact">
+            <div class="footer__nav-content">
+                <h2 class="footer__nav-title">Formulaire de contact</h2>
+                <a href="/fr/contact.html" class="footer__nav-link" aria-label="Accéder au formulaire de contact">
+                    <img src="/assets/icons/fleche.svg" alt="Voir plus" loading="lazy">
+                </a>
+            </div>
         </div>
-    </div>
 
-    <!-- Glossaire -->
-    <div class="footer__nav-item footer__nav-item--glossaire">
-        <div class="footer__nav-content">
-            <h2 class="footer__nav-title">Glossaire</h2>
-            <a href="/fr/glossaire.html" class="footer__nav-link">
-                <img src="/assets/icons/fleche.svg" alt="Voir plus">
-            </a>
+        <!-- Glossaire -->
+        <div class="footer__nav-item footer__nav-item--glossaire">
+            <div class="footer__nav-content">
+                <h2 class="footer__nav-title">Glossaire</h2>
+                <a href="/fr/glossaire.html" class="footer__nav-link" aria-label="Consulter le glossaire">
+                    <img src="/assets/icons/fleche.svg" alt="Voir plus" loading="lazy">
+                </a>
+            </div>
         </div>
-    </div>
 
-    <!-- Mailto -->
-    <div class="footer__nav-item footer__nav-item--mailto">
-        <div class="footer__nav-content">
-            <h2 class="footer__nav-title">Mailto</h2>
-            <a href="mailto:noemie.caritey@edu.univ-fcomte.fr" class="footer__nav-link">
-                <img src="/assets/icons/fleche.svg" alt="Envoyer un email">
-            </a>
+        <!-- Mailto -->
+        <div class="footer__nav-item footer__nav-item--mailto">
+            <div class="footer__nav-content">
+                <h2 class="footer__nav-title">Mailto</h2>
+                <a href="mailto:noemie.caritey@edu.univ-fcomte.fr" class="footer__nav-link" aria-label="Envoyer un email">
+                    <img src="/assets/icons/fleche.svg" alt="Envoyer un email" loading="lazy">
+                </a>
+            </div>
         </div>
-    </div>
 
-    <!-- Informations projet -->
-    <div class="footer__content">
-        <p class="footer__project">« projet réalisé en 2025 dans le cadre d'un exercice pédagogique au département MMi de Montbéliard »</p>
-        <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/" target="_blank" class="footer__link">https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/</a>
-    </div>
+        <!-- Informations projet -->
+        <div class="footer__content">
+            <p class="footer__project">« projet réalisé en 2025 dans le cadre d'un exercice pédagogique au département MMi de Montbéliard »</p>
+            <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/" target="_blank" rel="noopener noreferrer" class="footer__link" aria-label="Visiter le site du département MMi, ouvre dans un nouvel onglet">https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/</a>
+        </div>
 
-    <!-- Crédits -->
-    <div class="footer__credits">
-        <p>Noémie CARITEY A2</p>
-    </div>
-</footer>
+        <!-- Crédits -->
+        <div class="footer__credits">
+            <p>Noémie CARITEY A2</p>
+        </div>
+    </footer>
 </body>
 </html>
