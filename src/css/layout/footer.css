@@ -73,7 +73,7 @@
 }
 
 .footer__project {
-  font-size: var(--font-l);
+  font-size: var(--font-s);
   margin-bottom: 15px;
   line-height: 1.6;
 }
@@ -90,8 +90,6 @@
 .footer__link:hover {
   color: var(--rouge, #c63f3e);
 }
-
-
 
 .footer__credits {
   background-color: var(--rose, #eaa7c7);
