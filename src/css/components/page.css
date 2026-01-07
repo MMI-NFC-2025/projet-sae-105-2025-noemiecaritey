@@ -116,7 +116,7 @@
 
 .biographie__subtitle--in-text {
     margin-bottom: 15px;
-    margin-top: -200px;
+    margin-top: 0;
     margin-left: 0;
     margin-right: 0;
     clear: both;
@@ -169,6 +169,8 @@
     margin: 20px 0 20px -100px !important;
     top: 290px !important;
     left: 50px;
+    height: 428px;
+    width: 448px;
 }
 
 .biographie__text p:nth-child(2) {
@@ -185,13 +187,13 @@
 .biographie__block--reverse .biographie__text p:nth-of-type(2) {
     clear: right;
     position: relative;
-    top: -330px;
+    top: -100px;
     background-color: var(--color-white);
 }
 
 .biographie__block:last-child .biographie__text p {
     position: relative;
-    top: -520px;
+    top: -500px;
 }
 
 .biographie__block:last-child {
@@ -212,10 +214,6 @@
 .biographie__block:last-child .biographie__text .biographie__link {
     position: relative !important;
     top: -520px !important;
-}
-
-.biographie__link:hover {
-    opacity: 0.7;
 }
 
 .biographie__internal-links {
